@@ -21,10 +21,11 @@ body{
     background: black;
     color: white;
     font-family: "Calibri Light", sans-serif;
-    height: 1000px;
 
     user-select: none;
     -moz-user-select: none;
+    height: 100vh;
+    width: 100vw;
 }
 .container{
     width: 100%;

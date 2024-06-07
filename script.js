@@ -1,27 +1,30 @@
 let scoreElement = document.getElementById('Score');
-let tapValue = 1;
+let tapValue = 1
 let score = parseInt(localStorage.getItem('score')) || 0; // Retrieve score from local storage
 let tapEquals = document.getElementById('1TapEquals') // Retrieve score from local storage
-localStorage.setItem('tapValue', tapValue);
 
+
+
+window.onload = loadIt
 function incrementScore() {
-    tapValue = parseInt(localStorage.getItem('tapValue')) 
+    
+    localStorage.getItem('score', score);
     score += tapValue;
     scoreElement.innerText = score;
     localStorage.setItem('score', score); // Store score in local storage
     loadIt()
-    DBscore()
 }
 
 function loadIt(){
-    localStorage.getItem('tapValue', tapValue);
-    tapEquals.innerText = tapValue + '/1'
-
-    score = parseInt(localStorage.getItem('score')) || 0; // Load score from local storage
+    tapValue = parseInt(localStorage.getItem('tapValue'))
+    
+    score = parseInt(localStorage.getItem('score')); // Load score from local storage
     scoreElement.innerText = score; // Update score element with the loaded score
+
+    localStorage.getItem('tapValue', tapValue);
+    tapEquals.innerText = String(tapValue) + '/1'
 }
 
-setInterval(loadIt, 500)
 
 function saveScoreToLocalStorage() {
     localStorage.setItem('tapValue', tapValue);
@@ -29,16 +32,17 @@ function saveScoreToLocalStorage() {
 }
 
 document.getElementById('Shop').addEventListener('click', function() {
-    localStorage.getItem('tapValue', tapValue);
-    score = parseInt(localStorage.getItem('score')) || 0; // Load score from local storage
+    score = parseInt(localStorage.getItem('score')); // Load score from local storage
     scoreElement.innerText = score; // Update score element with the loaded score
-    DBscore()
+
+    tapValue = localStorage.getItem('tapValue', tapValue);
 });
 document.getElementById('Home').addEventListener('click', function() {
-    localStorage.getItem('tapValue', tapValue);
-    score = parseInt(localStorage.getItem('score')) || 0; // Load score from local storage
+    score = parseInt(localStorage.getItem('score')); // Load score from local storage
     scoreElement.innerText = score; // Update score element with the loaded score
-    DBscore()
+
+    localStorage.getItem('tapValue', tapValue);
+    loadIt()
 });
 
 
@@ -51,6 +55,7 @@ function secondClick() {
         score -= 100;
         localStorage.setItem('score', score);
         scoreElement.innerText = score;
+
         tapValue = tapValue + 1;
         localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
     } else {
@@ -58,8 +63,9 @@ function secondClick() {
     }
 }
 function tenClick() {
-    console.log("TwoXclick");
+    console.log("TenXclick");
     if (score >= 1000) {
+        localStorage.getItem('tapValue', tapValue);
         localStorage.getItem('score', score);
         score -= 1000;
         localStorage.setItem('score', score);
@@ -71,8 +77,9 @@ function tenClick() {
     }
 }
 function hungretClick() {
-    console.log("TwoXclick");
+    console.log("HunretXclick");
     if (score >= 10000) {
+        localStorage.getItem('tapValue', tapValue);
         localStorage.getItem('score', score);
         score -= 10000;
         localStorage.setItem('score', score);
