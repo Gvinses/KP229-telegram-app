@@ -21,8 +21,7 @@ body{
     background: black;
     color: white;
     font-family: "Calibri Light", sans-serif;
-    height: 576px;
-    width: 384px;
+    height: 1000px;
 
     user-select: none;
     -moz-user-select: none;
