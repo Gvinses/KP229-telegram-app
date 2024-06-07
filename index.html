@@ -2,31 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 </head>
 <body>
+    <main>
 
-    <iframe src="shop.html" frameborder="0" id="shopFrame"></iframe>
-
-    <div class="container">
-        <div class="info">
-            <h2 id="1TapEquals">1/1</h2>
-            <h2 id="Score">0</h2>
+        <div class="container">
+            <div class="info">
+                <h2 id="1TapEquals">1/1</h2>
+                <h2 id="Score">0</h2>
+            </div>
+            <span class="clickerPart">
+                <button onclick="incrementScore()">
+                    <img id="toClick" src="pictures/Logo.jpg"/>
+                </button>
+            </span>
+            <div class="menu">
+                <a href="shop.html"><img id="Shop" src="pictures/icons8-shopping-cart-100.png" height="50" width="50"/></a>
+                <a href="#"><img src="pictures/icons8-world-100.png" height="50" width="50"/></a>
+            </div>
         </div>
-        <span class="clickerPart">
-            <button onclick="incrementScore()">
-                <img id="toClick" src="pictures/Logo.jpg" height="440" width="440"/>
-            </button>
-        </span>
-        <div class="menu">
-            <a href="shop.html"><img id="Shop" src="pictures/icons8-shopping-cart-100.png" height="100" width="100"/></a>
-            <a href="#"><img src="pictures/icons8-world-100.png" height="100" width="100"/></a>
-        </div>
-    </div>
 
+    </main>
 
 
     <script src="script.js"></script>
