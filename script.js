@@ -1,11 +1,21 @@
 let scoreElement = document.getElementById('Score');
 let tapValue = 1
-let score = parseInt(localStorage.getItem('score')) || 0; // Retrieve score from local storage
+let score = parseInt(localStorage.getItem('score') ?? 0) ; // Retrieve score from local storage
 let tapEquals = document.getElementById('1TapEquals') // Retrieve score from local storage
 
-
+function localStorageChecker() {
+    if ((localStorage.getItem('score') == null) || (localStorage.getItem('score') === NaN )) {
+        localStorage.setItem('score', 0);
+    }
+    if (localStorage.getItem('tapValue') == null) {
+        localStorage.setItem('tapValue', 1);
+    }
+}
 
 window.onload = loadIt
+window.onload = localStorageChecker
+
+
 function incrementScore() {
     
     localStorage.getItem('score', score);
