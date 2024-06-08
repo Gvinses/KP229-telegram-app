@@ -1,24 +1,45 @@
+
+
 let scoreElement = document.getElementById('Score');
 let tapValue = 1
-let score = parseInt(localStorage.getItem('score') ?? 0) ; // Retrieve score from local storage
+let score = parseInt(localStorage.getItem('score') || 1) ; // Retrieve score from local storage
 let tapEquals = document.getElementById('1TapEquals') // Retrieve score from local storage
 
+console.log(localStorage.getItem('score'));
+console.log(localStorage.getItem('tapValue'));
+
 function localStorageChecker() {
-    if ((localStorage.getItem('score') == null) || (localStorage.getItem('score') === NaN )) {
+    console.log(localStorage.getItem('score'));
+    console.log(localStorage.getItem('tapValue'));
+    if ((localStorage.getItem('score') === null) || (localStorage.getItem('tapValue') === NaN)) {
         localStorage.setItem('score', 0);
     }
-    if (localStorage.getItem('tapValue') == null) {
+    if (localStorage.getItem('tapValue') === null || (localStorage.getItem('tapValue') === NaN)) {
         localStorage.setItem('tapValue', 1);
     }
 }
 
-window.onload = loadIt
-window.onload = localStorageChecker
+window.onload = localStorageChecker()
+window.onload = loadIt()
+window.onload = parser()
 
 
-function incrementScore() {
-    
+function parser(){
     localStorage.getItem('score', score);
+    scoreElement.innerText = score;
+
+    localStorage.getItem('tapValue', tapValue);
+    tapEquals.innerText = String(tapValue) + '/1'
+
+    tapValue = parseInt(localStorage.getItem('tapValue'))
+
+    localStorage.setItem('tapValue', tapValue); 
+    localStorage.setItem('score', score); // Store score in local storage
+}
+
+function incrementScore() {    
+    localStorage.getItem('score', score);
+
     score += tapValue;
     scoreElement.innerText = score;
     localStorage.setItem('score', score); // Store score in local storage
