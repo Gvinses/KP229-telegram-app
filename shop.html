@@ -67,39 +67,6 @@
             document.documentElement.className = Telegram.WebApp.colorScheme;
         });
 
-        // Show main button
-        Telegram.WebApp.MainButton.setParams({
-            text: 'Main Button'
-        });
-        Telegram.WebApp.MainButton.onClick(function () {
-            Telegram.WebApp.showAlert('Main Button was clicked')
-        });	
-        Telegram.WebApp.MainButton.show();
-
-        // Function to call showPopup API
-        function showPopup() {
-            Telegram.WebApp.showPopup({
-                title: 'Title',
-                message: 'Some message',
-                buttons: [
-                    {id: 'link', type: 'default', text: 'Open ton.org'},
-                    {type: 'cancel'},
-                ]
-            }, function(btn) {
-                if (btn === 'link') {
-                    Telegram.WebApp.openLink('https://ton.org/');
-                }
-            });
-        };
-
-        // Function to toggle main TWA button
-        function toggleMainButton() {
-            if (Telegram.WebApp.MainButton.isVisible) {
-                Telegram.WebApp.MainButton.hide();
-            } else {
-                Telegram.WebApp.MainButton.show();
-            }
-        };
 
         function setViewportData() {
             var sizeEl = document.getElementById('viewport-params-size');
@@ -120,10 +87,9 @@
         });
 
     </script>
-
     <!-- Eruda is console for mobile browsers -->
 
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <!-- <script>eruda.init();</script> -->
+    <script>eruda.init();</script>
 </body>
 </html>
