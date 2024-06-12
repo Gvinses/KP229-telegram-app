@@ -1,3 +1,5 @@
+// import supabase from "../DB/supabaseClient";
+
 window.onload = localStorageChecker()
 
 let scoreElement = document.getElementById('Score');
@@ -27,8 +29,9 @@ window.onload = loadIt()
 window.onload = parser()
 window.onload = numbers()
 
-
+// loadItemsFromCloud()
 function parser(){
+    
     localStorage.getItem('score', score);
     scoreElement.innerText = score;
 
@@ -39,25 +42,41 @@ function parser(){
 
     localStorage.setItem('tapValue', tapValue); 
     localStorage.setItem('score', score); // Store score in local storage
+
+    document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore() {    
-    localStorage.getItem('score', score);
+function incrementScore() {   
+    // console.log(supabase);
+    localStorage.setItem('energy', energy);
 
-    score += tapValue;
-    scoreElement.innerText = score;
-    localStorage.setItem('score', score); // Store score in local storage
-    loadIt()
-    numbers()
+    if (energy <= 0) {
+        $('#userEnergy').css("color", "red")
+        $('#userMaxEnergy').css("color", "red");
+        setTimeout(() => {
+            $('#userEnergy').css("color", "#fff")
+            $('#userMaxEnergy').css("color", "#fff");
+        }, 1000)
 
-    picToClick.css("transform", "scale(1)")
-    setTimeout(() => {
-        picToClick.css("transform", "scale(0.9)")
-    })
-    setTimeout(() => {
+    } else {
+        localStorage.getItem('score', score);
+
+        score += tapValue;
+        scoreElement.innerText = score;
+        localStorage.setItem('score', score); // Store score in local storage
+        
+        loadIt()
+        numbers()
+        Energy()
+    
         picToClick.css("transform", "scale(1)")
-    }, 200);
-
+        setTimeout(() => {
+            picToClick.css("transform", "scale(0.9)")
+        })
+        setTimeout(() => {
+            picToClick.css("transform", "scale(1)")
+        }, 200);
+    } 
 }
 
 function numbers(){

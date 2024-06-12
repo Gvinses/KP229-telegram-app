@@ -29,6 +29,9 @@ button{
     border: none;
     background: none;
 }
+#toClick{
+    filter: invert(1);
+}
 
 /*------------------------main----------------------*/
 
@@ -62,16 +65,26 @@ main{
     width: 70px;
     height: 70px;
 }
-img, svg{
+/* img, svg{
     filter: invert(1);
-}
+} */
 #toClick{
     width: calc(440px - 20%);
     height: calc(440px - 20%);
 
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.enegry{
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
+    position: relative;
+    right: 10px;
+}
+#userEnergy, #userMaxEnergy{
+    transition: 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
 /*------------------------shop----------------------*/
 
 .ShopMain{
@@ -130,4 +143,31 @@ button{
 }
 #twoXclicker:hover{
     cursor: pointer;
+}
+
+/*------------------------task----------------------*/
+a{
+    color: rgb(158, 198, 243);
+    text-decoration: none;
+}
+
+
+.TaskMain{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.TaskContainer{
+    margin-top: 100px;
+    border: 1px solid white;
+    width: calc(100% / 2);
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.FirstTask{
+    padding: 10px;
+    border: 2px solid white;
 }

@@ -2,51 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="javascript/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <div class="ShopMain">
-        <div class="ShopContainer">
-            <h1 class="scoreInHTML" id="Score">0</h1>
-            <h1 id="Error"></h1>
-            
-            <span class="TwoxClicker" id="twoXclicker">
-                    <button id="secondClickButton" onclick="secondClick()">
-                    <img src="pictures/Shop.svg" height="50" width="50"/>
-                    <h2>Двойной клик</h2>
+    
+
+
+    <div class="TaskMain">
+        <div class="TaskContainer">
+            <span class="FirstTask" id="firstTask">
+                    <img src="GIF/telegram-gif.gif" height="50" width="50"/>
+                    <h2>Подписаться на <a href="https://t.me/+iHDNyziSt-lkOTNh">канал KP229</a></h2>
                     <span class="pricePart">
-                        <h3>+1</h3>
-                        <p>Стоимость: 100</p>
+                        <p>10000</p>
                     </span>
                 </button>
             </span>
-
-            
-            <span class="TenxClicker" id="tenXclicker">
-                <button id="tenClickButton" onclick="tenClick()">
-                    <img src="pictures/icons8-mine-64.png" height="50" width="50"/>
-                    <h2>Десять кликов</h2>
-                    <span class="pricePart">
-                        <h3>+10</h3>
-                        <p>Стоимость: 1000</p>
-                    </span>
-                </button>
-            </span>
-
-            <span class="TenxClicker" id="oneHXclicker">
-                <button id="hungretClickButton" onclick="hungretClick()">
-                    <img src="pictures/icons8-factory-100.png" height="50" width="50"/>
-                        <h2>Завод кликов</h2>
-                        <span class="pricePart">
-                            <h3>+100</h3>
-                            <p>Стоимость: 10000</p>
-                        </span>
-                </button>
-            </span>
-
 
             <div class="aboutNew">
                 <p>Something New Soon</p>
@@ -56,9 +29,7 @@
         
     </div>
 
-    <script src="javascript/script.js"></script>
-    <script src="javascript/userSelect.js"></script>
-    <script src="javascript/energy.js"></script>
+
 
     <script>
         // Init TWA
@@ -89,11 +60,8 @@
         });
 
     </script>
-    <!-- Eruda is console for mobile browsers -->
-
-    <script src="CloudStorage/app.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <!-- <script>eruda.init();</script> -->
+    <script src="javascript/userSelect.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="pictures/Logo.jpg" rel="shortcut icon">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="jquery-3.7.1.js"></script>
+    <script src="javascript/jquery-3.7.1.js"></script>
 </head>
 <body>
     <main>
@@ -21,17 +22,28 @@
                     <img id="toClick" src="pictures/Logo.jpg"/>
                 </button>
             </span>
+            
+            <div class="enegry">
+                <img src="pictures/Energy.svg" width="50" height="50">
+                <h3 id="userEnergy">1000</h3>
+                <h3>/</h3>
+                <h3 id="userMaxEnergy">1000</h3>
+            </div>
+            
             <div class="menu">
-                <a href="shop.html"><img id="Shop" src="pictures/icons8-shopping-cart-100.png" height="50" width="50"/></a>
-                <a href="#"><img src="pictures/icons8-world-100.png" height="50" width="50"/></a>
+                <a href="shop.html"><img id="Shop" src="pictures/Shop.svg" height="50" width="50"/></a>
+                <a href="#"><img src="pictures/Task.svg" height="50" width="50"/></a>
             </div>
         </div>
-
     </main>
 
 
-    <script src="script.js"></script>
-    
+    <script src="javascript/script.js"></script>
+    <script src="javascript/userSelect.js"></script>
+    <script src="javascript/energy.js"></script>
+    <script src="javascript/toDBscript.js"></script>
+    <script src="CloudStorage/app.js"></script>
+
     <script>
         // Init TWA
         Telegram.WebApp.ready();
@@ -62,11 +74,7 @@
 
     </script>
 
-    <!-- Eruda is console for mobile browsers -->
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <!-- <script>eruda.init();</script> -->
     
-
-    <script src="userSelect.js"></script>
 </body>
 </html>

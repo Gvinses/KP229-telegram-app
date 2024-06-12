@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/KPcoin.iml" filepath="$PROJECT_DIR$/.idea/KPcoin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KP229-telegram-app.iml" filepath="$PROJECT_DIR$/.idea/KP229-telegram-app.iml" />
     </modules>
   </component>
 </project>
