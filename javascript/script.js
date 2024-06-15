@@ -22,16 +22,17 @@ function localStorageChecker() {
     if (localStorage.getItem('tapValue') === null || (localStorage.getItem('tapValue') === NaN)) {
         localStorage.setItem('tapValue', 1);
     }
+    if ((localStorage.getItem('energy') === null) || (localStorage.getItem('energy') === NaN)) {
+        localStorage.setItem('energy', 1000);
+    }
 }
-
 
 window.onload = loadIt()
 window.onload = parser()
 window.onload = numbers()
 
 // loadItemsFromCloud()
-function parser(){
-    
+function parser(){    
     localStorage.getItem('score', score);
     scoreElement.innerText = score;
 
