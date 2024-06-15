@@ -16,7 +16,7 @@ function localStorageChecker() {
     if (localStorage.getItem('tapValue') === null || (localStorage.getItem('tapValue') === NaN)) {
         localStorage.setItem('tapValue', 1);
     }
-    if ((localStorage.getItem('energy') === null) || (localStorage.getItem('energy') === NaN)) {
+    if ((localStorage.getItem('energy') === null) || (localStorage.getItem('energy') === 'NaN')) {
         localStorage.setItem('energy', 1000);
         energy = localStorage.getItem('energy')
         userEnergy.innerText = energy 
