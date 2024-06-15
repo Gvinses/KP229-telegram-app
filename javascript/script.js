@@ -46,7 +46,12 @@ function parser(){
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore() {   
+function incrementScore() {  
+    
+    if (localStorage.getItem('haveReactor?') === 'true') {
+        reactor()
+    }
+
     // console.log(supabase);
     localStorage.setItem('energy', energy);
 
@@ -138,49 +143,3 @@ document.getElementById('Home').addEventListener('click', function() {
     localStorage.getItem('tapValue', tapValue);
     loadIt()
 });
-
-
-
-function secondClick() {
-    console.log("TwoXclick");
-    if (score >= 100) {
-        localStorage.getItem('tapValue', tapValue);
-        localStorage.getItem('score', score);
-        score -= 100;
-        localStorage.setItem('score', score);
-        scoreElement.innerText = score;
-
-        tapValue = tapValue + 1;
-        localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
-    } else {
-        document.getElementById('Error').innerText = 'Not enough!';
-    }
-}
-function tenClick() {
-    console.log("TenXclick");
-    if (score >= 1000) {
-        localStorage.getItem('tapValue', tapValue);
-        localStorage.getItem('score', score);
-        score -= 1000;
-        localStorage.setItem('score', score);
-        scoreElement.innerText = score;
-        tapValue = tapValue + 10;
-        localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
-    } else {
-        document.getElementById('Error').innerText = 'Not enough!';
-    }
-}
-function hungretClick() {
-    console.log("HunretXclick");
-    if (score >= 10000) {
-        localStorage.getItem('tapValue', tapValue);
-        localStorage.getItem('score', score);
-        score -= 10000;
-        localStorage.setItem('score', score);
-        scoreElement.innerText = score;
-        tapValue = tapValue + 100;
-        localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
-    } else {
-        document.getElementById('Error').innerText = 'Not enough!';
-    }
-}

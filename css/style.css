@@ -102,7 +102,7 @@ main{
     flex-direction: column;
     text-align: center;
 }
-.TwoxClicker, .TenxClicker{
+.TwoxClicker, .TenxClicker, .c1000Xclicker{
     padding: 10px;
     border: 2px solid white;
 }
@@ -122,12 +122,14 @@ main{
 }
 button{
     border: 0;
+    border: none;
+    outline: none;
 }
-#secondClickButton, #tenClickButton, #hungretClickButton{
+#secondClickButton, #tenClickButton, #hungretClickButton, #thousendClickButton{
     width: 100%;
     background-color: black;
 }
-#secondClickButton:hover, #tenClickButton:hover, #hungretClickButton:hover{
+#secondClickButton:hover, #tenClickButton:hover, #hungretClickButton:hover, #thousendClickButton:hover {
     cursor: pointer;
 }
 
@@ -137,6 +139,14 @@ button{
 }
 #Shop:hover{
     cursor: pointer;
+}
+#Home{
+    position: relative;
+    bottom: 95px;
+}
+#someNewSoon{
+    position: relative;
+    bottom: 80px;
 }
 #Home:hover{
     cursor: pointer;
@@ -170,4 +180,66 @@ a{
 .FirstTask{
     padding: 10px;
     border: 2px solid white;
+}
+
+#check1Task, #check2Task{
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ////////////////////// */
+
+.DeadContainer{
+    margin-top: 10%;
+    /* border: 1px solid white; */
+    width: calc(100% / 2);
+    height: 100%;
+    display: inline-block;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;    
+}
+.deadMain{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#backButton{
+    margin-top: 10%;
+    border: 1px solid white;
+    padding: 15px;
+    width: 100%;
+    color: white;
+
+    transition: cubic-bezier(0.165, 0.84, 1.44, 1);
+    animation: clickItButton 1s infinite linear forwards;
+    animation-play-state: running;
+}
+#backButton:hover{
+    animation-play-state: paused;
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+@keyframes clickItButton{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    75%{
+        transform: scale(0.98);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

@@ -4,6 +4,8 @@ let energy;
 
 if (localStorage.getItem('energy') === null) {
     localStorage.setItem('energy', 1000);
+    energy = 1000;
+    userEnergy.innerText = energy 
 } else {
     energy = parseInt(localStorage.getItem('energy'));
 }
@@ -34,7 +36,7 @@ function timer(){
         console.log(userEnergy.innerText)
         console.log(maxEnergy)
         setTimeout(() => {
-            intervalId = setInterval(energyReset, 10);
+            intervalId = setInterval(energyReset, 1000);
         }, 1000)
     }
 }

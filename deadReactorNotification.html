@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="deadMain">
+        <div class="DeadContainer">
+            <img src="" id="gifer" height="150" width="150"/>
+            <h1>Взрыв!</h1>
+            <hr>
+            <h3>Ваш реактор был взорван☹️</h3>
+            <p><i>Это происходит рандомно</i></p>
+            
+            <a href="index.html"><button onclick="closeIframe()" type="button" id="backButton">Принять это</button></a>
+        </div>
+    </div>
+
+
+    <script>
+        path = 'GIF/PococadoбомбаGIF.gif'
+        let number = Math.floor(Math.random() * 4) + 1
+        if(number == 1) path = 'https://media.tenor.com/PGnGqfkIuLYAAAAM/cat-head.gif' 
+        if(number == 2) path = 'https://media.tenor.com/hkPuIqfQK-sAAAAM/pococado-%D0%B1%D0%BE%D0%BC%D0%B1%D0%B0.gif'
+        if(number == 3) path = 'https://media.tenor.com/lI69QQaejQYAAAAM/incident.gif'
+        if(number == 4) path = 'https://media.tenor.com/cRUMbnADrPkAAAAi/cat-boom-cipa-ez.gif'
+
+        document.getElementById('gifer').src = path
+    </script>
+    
+    <script src="javascript/NuclearReactorLogic.js"></script>
+</body>
+</html> 
