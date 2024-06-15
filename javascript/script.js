@@ -9,13 +9,7 @@ let tapEquals = document.getElementById('1TapEquals') // Retrieve score from loc
 
 let picToClick = $('#toClick')
 
-
-console.log(localStorage.getItem('score'));
-console.log(localStorage.getItem('tapValue'));
-
 function localStorageChecker() {
-    console.log(localStorage.getItem('score'));
-    console.log(localStorage.getItem('tapValue'));
     if ((localStorage.getItem('score') === null) || (localStorage.getItem('score') === NaN)) {
         localStorage.setItem('score', 0);
     }
@@ -24,6 +18,11 @@ function localStorageChecker() {
     }
     if ((localStorage.getItem('energy') === null) || (localStorage.getItem('energy') === NaN)) {
         localStorage.setItem('energy', 1000);
+        energy = localStorage.getItem('energy')
+        userEnergy.innerText = energy 
+    }
+    if ((localStorage.getItem('haveReactor?') === null) || (localStorage.getItem('haveReactor?') === NaN)) {
+        localStorage.setItem('haveReactor?', false);
     }
 }
 

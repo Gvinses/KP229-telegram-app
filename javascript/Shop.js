@@ -65,3 +65,22 @@ function Click1500() {
         document.getElementById('Error').innerText = 'Не хватает!';
     }
 }
+function secondPhase() {
+    console.log("GO TO SECOND Phase");
+    if (score >= 100000) {
+        localStorage.getItem('tapValue', tapValue);
+        localStorage.getItem('score', score);
+        score -= 100000;
+        localStorage.setItem('score', score);
+        scoreElement.innerText = score;
+        tapValue = tapValue + 15;
+        localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
+
+        ////// for phase /////
+        let phase = 2
+        localStorage.setItem('phase', phase)
+        //////////////////////
+    } else {
+        document.getElementById('Error').innerText = 'Не хватает!';
+    }
+}
