@@ -4,7 +4,7 @@ from telegram import Chat
 import httpx
 import os
 
-bot = telebot.TeleBot('7295713770:AAFyqD90Wto-QyalJiM2zBdJhZGVFPtOvqY')
+
 
 @bot.message_handler(commands=['start']) 
 def main_message(message):
