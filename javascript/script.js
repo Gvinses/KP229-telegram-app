@@ -29,7 +29,16 @@ function localStorageChecker() {
 window.onload = loadIt()
 window.onload = parser()
 window.onload = numbers()
+window.onload = tapValueCorrect()
 
+
+function tapValueCorrect() {
+    if (parseInt(localStorage.getItem('tapValue')) <= 0){
+        localStorage.setItem('tapValue', 1);
+        parser()
+        location.reload()
+    }
+}
 // loadItemsFromCloud()
 function parser(){    
     localStorage.getItem('score', score);

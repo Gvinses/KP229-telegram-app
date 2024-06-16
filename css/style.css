@@ -132,7 +132,6 @@ button{
 #secondClickButton:hover, #tenClickButton:hover, #hungretClickButton:hover, #thousendClickButton:hover {
     cursor: pointer;
 }
-
 #shopFrame{
     opacity: 0;
     z-index: 0;
@@ -154,7 +153,26 @@ button{
 #twoXclicker:hover{
     cursor: pointer;
 }
-
+.forMoreThan2Type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 19px;
+    color: white;
+}
+.infoOfItem{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.unusualItemUsage{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    font-size: 15px;
+}
 /*------------------------task----------------------*/
 a{
     color: rgb(158, 198, 243);

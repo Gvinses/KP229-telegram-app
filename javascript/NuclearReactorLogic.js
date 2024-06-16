@@ -10,24 +10,8 @@ function reactor(){
 
 
 function iframeOpen() {
-    let Boomiframe = document.createElement('iframe');
-    Boomiframe.src = '../deadReactorNotification.html';
-    Boomiframe.style.position = 'fixed';
-    Boomiframe.style.top = '0';
-    Boomiframe.style.left = '0';
-    Boomiframe.style.width = '100%';
-    Boomiframe.style.height = '100%';
-    Boomiframe.style.zIndex = '9999';
-    Boomiframe.style.border = 'none';
-    document.body.appendChild(Boomiframe);
+    window.open(deadReactorNotification.html)
 }
-
-function closeIframe() {
-    document.body.removeChild(Boomiframe);
-}
-
-
-
 function changerInfo(){
     localStorage.getItem('tapValue', tapValue);
     localStorage.getItem('score', score);
