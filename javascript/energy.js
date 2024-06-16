@@ -49,6 +49,6 @@ function energyReset() {
     } else {
         location.reload()
         let EnegryToLocal = userEnergy.innerHTML
-        localStorage.setItem('energy', Ene);
+        localStorage.setItem('energy', EnegryToLocal);
     }
 }
