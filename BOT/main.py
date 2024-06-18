@@ -4,10 +4,6 @@ from telegram import Chat
 import httpx
 import os
 
-# DONT SAVE IT!!!!!!!
-bot = telebot.TeleBot('7295713770:AAFyqD90Wto-QyalJiM2zBdJhZGVFPtOvqY')
-# DONT SAVE IT!!!!!!!
-
 
 @bot.message_handler(commands=['start']) 
 def main_message(message):
