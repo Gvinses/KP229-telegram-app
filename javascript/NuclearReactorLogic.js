@@ -3,21 +3,18 @@ function reactor(){
 
     console.log(number)
     if (number === 1){
+        window.open("https://gvinses.github.io/KP229-telegram-app/deadReactorNotification.html", "_self")
         changerInfo()
-        iframeOpen()
     }
 }
-
-
-function iframeOpen() {
-    window.open(deadReactorNotification.html)
-}
 function changerInfo(){
-    localStorage.getItem('tapValue', tapValue);
-    localStorage.getItem('score', score);
-    score = 1000;
+    score = parseInt(localStorage.getItem('score'));
+    score = score % 20;
+    console.log(score)
     localStorage.setItem('score', score);
-    scoreElement.innerText = score;
+    // scoreElement.innerText = score;
+
+    localStorage.getItem('tapValue', tapValue);
     tapValue = tapValue - 1500;
     localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
 

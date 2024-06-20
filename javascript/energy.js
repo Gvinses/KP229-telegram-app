@@ -28,8 +28,6 @@ function Energy() {
     timer()
 }
 
-
-
 function timer(){
     if(energy <= 0){
         let intervalId
@@ -52,3 +50,6 @@ function energyReset() {
         localStorage.setItem('energy', EnegryToLocal);
     }
 }
+
+
+
