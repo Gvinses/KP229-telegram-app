@@ -30,6 +30,7 @@ window.onload = loadIt()
 window.onload = parser()
 window.onload = numbers()
 window.onload = tapValueCorrect()
+window.onload = setUserBG()
 
 
 function tapValueCorrect() {
@@ -90,7 +91,7 @@ function incrementScore() {
         setTimeout(() => {
             picToClick.css("transform", "scale(1)")
         }, 200);
-    } 
+    }
 }
 
 function numbers(){

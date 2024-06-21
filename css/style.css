@@ -13,7 +13,6 @@ body{
     color: white;
     font-family: "Calibri Light", sans-serif;
 
-    padding: auto;
     margin: auto;
 
 
@@ -22,7 +21,9 @@ body{
     -khtml-user-select: none;    /* Konqueror */
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;     
+    user-select: none;
+
+    background-image: url("");
 }
 
 button{
@@ -195,7 +196,7 @@ a{
     flex-direction: column;
     text-align: center;
 }
-.FirstTask{
+.FirstTask, .secondTask{
     padding: 10px;
     border: 2px solid white;
 }
@@ -211,7 +212,39 @@ a{
     cursor: pointer;
 }
 
+/*/////// custom settings ///////*/
 
+.CustomMain {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.CustomContainer {
+    margin-top: 100px;
+    border: 1px solid white;
+    width: calc(100% / 2);
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.downPart {
+    border: 1px solid white;
+    display: flex;
+    overflow: hidden;
+}
+#clickImg {
+    width: 500px;
+    border: 1px solid white;
+    padding: 10px;
+}
+#clickImg img {
+    border: 1px solid white;
+}
+#clickImg > h3 {
+    filter: invert(1);
+}
 /* ////////////////////// */
 
 .DeadContainer{
@@ -247,6 +280,21 @@ a{
     cursor: pointer;
 }
 
+/*/////////////////////////////////////*/
+
+.IOBG{
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.IOBGup, .IOBGdown{
+    display: inline-block;
+}
+
+/*/////////////////////////////////////*/
+
+
 @keyframes clickItButton{
     0%{
         transform: scale(1);
@@ -261,3 +309,32 @@ a{
         transform: scale(1);
     }
 }
+
+@media (max-width: 700px) {
+    .downPart {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #clickImg {
+        width: 190px;
+    }
+    #upper, #lowwer{
+        display: flex;
+    }
+}
+/* @media (max-width: 570px) {
+    .downPart {
+        border: 1px solid white;
+        display: flex;
+        /* flex-direction: column; 
+        overflow: hidden;
+    }
+    #clickImg {
+        width: 70px;
+    }
+    #upper, #lowwer{
+        display: inline;
+    }
+} */

@@ -1,6 +1,14 @@
 let date;
+let Anotherdate;
 
 window.onunload = function () {
+    date = new Date();
+    localStorage.setItem('oldDate', date);
+}
+
+setTimeout(saveDate, 1000)
+
+function saveDate() {
     date = new Date();
     localStorage.setItem('oldDate', date);
 }
@@ -26,8 +34,8 @@ function checker() {
         if (diffMinutes >= 16) {
             energy = maxEnergy;
         } else {
-            let howMuchToGiveEnergy = diffMinutes * 2;
-            energy = Math.min(maxEnergy, parseInt(energy) + howMuchToGiveEnergy);
+            let howMuchToGiveEnergy = diffMinutes % 0.9;
+            energy = Math.min(parseInt(energy) + howMuchToGiveEnergy);
         }
 
         localStorage.setItem('energy', energy);

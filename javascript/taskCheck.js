@@ -14,12 +14,12 @@ function localStorageHaveItemsForTasks(){
 }
 
 function startTasksChecker(){
-    if ((localStorage.getItem('1TaskCompleated')) == 'true'){
+    if ((localStorage.getItem('1TaskCompleated')) === 'true'){
         button1.style.backgroundColor = '#3E9736';
         button1.textContent = '✅';
     }
 
-    if ((localStorage.getItem('2TaskCompleated')) == 'true'){
+    if ((localStorage.getItem('2TaskCompleated')) === 'true'){
         button2.style.backgroundColor = '#3E9736';
         button2.textContent = '✅';
     }
@@ -28,7 +28,7 @@ function startTasksChecker(){
 function check1Task(){
     let button1 = document.getElementById('check1Task');
 
-    if (localStorage.getItem('1TaskCompleated') == 'false'){
+    if (localStorage.getItem('1TaskCompleated') === 'false'){
         score = parseInt(localStorage.getItem('score'));
         score = score + 500;
         console.log(score);
@@ -51,7 +51,7 @@ function check2Task(){
     let button2 = document.getElementById('check2Task');
 
     if (parseInt(localStorage.getItem('score')) >= 1000 ){
-        if (localStorage.getItem('2TaskCompleated') == 'false'){
+        if (localStorage.getItem('2TaskCompleated') === 'false'){
             score = parseInt(localStorage.getItem('score'));
             score = score + 2000;
             console.log(score);

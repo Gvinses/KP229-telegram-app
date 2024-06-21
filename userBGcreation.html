@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link type="image/x-icon" href="pictures/Logo.jpg" rel="shortcut icon">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="javascript/jquery-3.7.1.js"></script>
 </head>
 <body>
-    <main>
+    
+    <div class="CustomMain">
+        <div class="CustomContainer">
 
-        <div class="container">
-            <div class="info">
-                <h2 id="1TapEquals">1/1</h2>
-                <h2 class="scoreInHTML" id="Score">0</h2>
+            <div class="Background" id="background">
+                <h1>Туториал</h1>
+
+                <p>1. Переходи на сайт <a href="https://ru.imgbb.com" target="_blank">https://ru.imgbb.com</a></p>
+                <p>2. Нажимай "начать загрузку"</p>
+                <p>3. Выбеери файл </p>
+                <p>4. Перейди по ссылке</p>
+                <p>5. Пролистни вниз и найди "Код изображения оригинальный размер со ссылкой => HTML"</p>
+                <p>6. Скопируй ссылку которая идёт img src="xxxxxxx" и вставь её</p>
+
+                <span class="IOBG">
+                    <h1>Свой BG</h1>
+                    <span class="IOBGup">
+                        <input style="padding: 5px; border: none; outline: none; border-radius: 35px" id="forUserBG" type="text" placeholder="ссылка">
+                        <button style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="userBGChange()">Отправить</button>
+                    </span>
+                    <span class="IOBGdown">
+                        <img src="" id="outputOfBG" width="100px">
+                    </span>
+                </span>
             </div>
-            <span class="clickerPart">
-                <button onclick="incrementScore()">
-                    <img id="toClick" src="pictures/Logo.jpg"/>
-                </button>
-            </span>
-            
-            <div class="enegry">
-                <img src="pictures/Energy.svg" width="50" height="50">
-                <h3 id="userEnergy">1000</h3>
-                <h3>/</h3>
-                <h3 id="userMaxEnergy">1000</h3>
-            </div>
-             
-            <div class="menu">
-                <a href="shop.html"><img id="Shop" src="pictures/Shop.svg" height="50" width="50"/></a>
-                <a href="quests.html"><img src="pictures/Task.svg" height="50" width="50"/></a>
+
+            <div class="aboutNew">
+                <a href="index.html"><img src="pictures/HomeSVGG.svg" height="70px" width="70px"></a>
             </div>
         </div>
-    </main>
+
+    </div>
 
 
     <script src="javascript/script.js"></script>
@@ -58,7 +64,7 @@
 
         function setViewportData() {
             var sizeEl = document.getElementById('viewport-params-size');
-            sizeEl.innerText = 'width: ' + window.innerWidth + ' x ' + 
+            sizeEl.innerText = 'width: ' + window.innerWidth + ' x ' +
                 'height: ' + Telegram.WebApp.viewportStableHeight;
 
             var expandEl = document.querySelector('#viewport-params-expand');
@@ -77,6 +83,5 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    
 </body>
 </html>
