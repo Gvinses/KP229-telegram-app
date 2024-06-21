@@ -1,4 +1,5 @@
 let date;
+let Anotherdate;
 
 window.onunload = function () {
     date = new Date();
