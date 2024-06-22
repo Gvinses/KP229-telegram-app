@@ -23,7 +23,6 @@ body{
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
 
-    background-image: url("");
 }
 
 button{
@@ -245,7 +244,7 @@ a{
 #clickImg > h3 {
     filter: invert(1);
 }
-/* ////////////////////// */
+/* /////////US background////////// */
 
 .DeadContainer{
     margin-top: 10%;
@@ -262,25 +261,26 @@ a{
     justify-content: center;
     align-content: center;
 }
-
+#clickImg{
+    cursor: pointer;
+}
 #backButton{
     margin-top: 10%;
     border: 1px solid white;
     padding: 15px;
     width: 100%;
-    color: white;
+    color: #ffffff;
 
     transition: cubic-bezier(0.165, 0.84, 1.44, 1);
     animation: clickItButton 1s infinite linear forwards;
     animation-play-state: running;
 }
-#backButton:hover{
+#backButton:hover {
     animation-play-state: paused;
     outline: 2px solid white;
     cursor: pointer;
 }
-
-/*/////////////////////////////////////*/
+/*//////////////////us Style//////////////////*/
 
 .IOBG{
     margin-top: 10px;
@@ -290,6 +290,59 @@ a{
 }
 .IOBGup, .IOBGdown{
     display: inline-block;
+}
+#popup-overlay, #popup-overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#popup, #popup2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    background-color: #3e3e3e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#popup button, #popup2 button{
+    margin-top: 10px;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    color: white;
+}
+#brush{
+    position: relative;
+    right: 10px;
+}
+.menu{
+    position: relative;
+    left: 8px;
+}
+.aboutNewBG{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    bottom: -90px;
+    position: relative;
+}
+#linkToMain{
+    display: flex;
+}
+#linkToBack{
+    display: flex;
 }
 
 /*/////////////////////////////////////*/
@@ -310,7 +363,24 @@ a{
     }
 }
 
-@media (max-width: 700px) {
+
+@media (max-width: 2017px) {
+    .downPart {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #clickImg {
+        width: 270px;
+        font-size: 30px;
+    }
+    #upper, #lowwer{
+        display: inline;
+    }
+}
+
+@media (max-width: 1097px) {
     .downPart {
         border: 1px solid white;
         display: flex;
@@ -319,22 +389,25 @@ a{
     }
     #clickImg {
         width: 190px;
-    }
-    #upper, #lowwer{
-        display: flex;
-    }
-}
-/* @media (max-width: 570px) {
-    .downPart {
-        border: 1px solid white;
-        display: flex;
-        /* flex-direction: column; 
-        overflow: hidden;
-    }
-    #clickImg {
-        width: 70px;
+        font-size: 20px;
     }
     #upper, #lowwer{
         display: inline;
     }
-} */
+}
+
+@media (max-width: 411px) {
+    .downPart {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #clickImg {
+        width: 80px;
+        font-size: 10px;
+    }
+    #upper, #lowwer{
+        display: inline;
+    }
+}

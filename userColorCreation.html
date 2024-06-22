@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="pictures/Logo.jpg" rel="shortcut icon">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="javascript/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+<div class="CustomMain">
+    <div class="CustomContainer">
+
+        <div class="Background" id="background">
+            <span class="IOBG">
+                    <h1>Свой Цвет</h1>
+                    <span class="IOBGup">
+                        <input style="padding: 5px; border: none; outline: none; border-radius: 35px" id="forUserColor" type="color">
+                        <button style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="showPopup2()">Использовать</button>
+                    </span>
+
+
+                    <div id="popup-overlay2">
+                        <div id="popup2">
+                            <img src="pictures/Dangerous.png" width="100">
+                            <h1>ВНИМАНИЕ</h1>
+                            <p>Вы уверены, что хотите поменять фон?</p>
+                            <p><i>Работает только там, где кликаешь</i></p>
+                            <a href="#"><button onclick="userColorChange()">Да</button></a>
+                            <a href="#"><button onclick="hidePopup2()">Нет</button></a>
+                        </div>
+                    </div>
+                </span>
+        </div>
+
+        <div class="aboutNewBG">
+            <a id="linkToMain" href="index.html"><img src="pictures/HomeSVGG.svg" height="70px" width="70px"></a>
+            <a id="linkToBack" href="customization.html"><img src="pictures/Strelochka.svg" height="70px" width="70px"></a>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="javascript/script.js"></script>
+<script src="javascript/userSelect.js"></script>
+<script src="javascript/energy.js"></script>
+<script src="javascript/Shop.js"></script>
+<script src="javascript/NuclearReactorLogic.js"></script>
+<script src="javascript/energyBackReboting.js"></script>
+<script src="javascript/Background.js"></script>
+<script src="javascript/popUpWin.js"></script>
+
+<script>
+    // Init TWA
+    Telegram.WebApp.ready();
+
+    // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
+    Telegram.WebApp.onEvent('themeChanged', function() {
+        document.documentElement.className = Telegram.WebApp.colorScheme;
+    });
+
+
+    function setViewportData() {
+        var sizeEl = document.getElementById('viewport-params-size');
+        sizeEl.innerText = 'width: ' + window.innerWidth + ' x ' +
+            'height: ' + Telegram.WebApp.viewportStableHeight;
+
+        var expandEl = document.querySelector('#viewport-params-expand');
+        expandEl.innerText = 'Is Expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false');
+    }
+
+    Telegram.WebApp.setHeaderColor('secondary_bg_color');
+
+    setViewportData();
+    Telegram.WebApp.onEvent('viewportChanged', setViewportData);
+
+    Telegram.WebApp.onEvent('themeChanged', function() {
+        document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
+    });
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script src="javascript/script.js"></script>
+</body>
+</html>

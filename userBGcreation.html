@@ -25,19 +25,33 @@
                 <p>6. Скопируй ссылку которая идёт img src="xxxxxxx" и вставь её</p>
 
                 <span class="IOBG">
-                    <h1>Свой BG</h1>
+                    <h1>Свой Фон</h1>
                     <span class="IOBGup">
                         <input style="padding: 5px; border: none; outline: none; border-radius: 35px" id="forUserBG" type="text" placeholder="ссылка">
-                        <button style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="userBGChange()">Отправить</button>
+                        <button style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="userBGChange()">Показать</button>
                     </span>
                     <span class="IOBGdown">
                         <img src="" id="outputOfBG" width="100px">
+                        <button id="toComplete" style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="textChecker()">Установить</button>
                     </span>
+
+
+                    <div id="popup-overlay">
+                        <div id="popup">
+                            <img src="pictures/Dangerous.png" width="100">
+                            <h1>ВНИМАНИЕ</h1>
+                            <p>Вы уверены, что хотите поменять фон?</p>
+                            <p><i>Работает только там, где кликаешь</i></p>
+                            <a href="#"><button onclick="setUserBG()">Да</button></a>
+                            <a href="#"><button onclick="hidePopup()">Нет</button></a>
+                        </div>
+                    </div>
                 </span>
             </div>
 
-            <div class="aboutNew">
-                <a href="index.html"><img src="pictures/HomeSVGG.svg" height="70px" width="70px"></a>
+            <div class="aboutNewBG">
+                <a id="linkToMain" href="index.html"><img src="pictures/HomeSVGG.svg" height="70px" width="70px"></a>
+                <a id="linkToBack" href="customization.html"><img src="pictures/Strelochka.svg" height="70px" width="70px"></a>
             </div>
         </div>
 
@@ -51,6 +65,7 @@
     <script src="javascript/NuclearReactorLogic.js"></script>
     <script src="javascript/energyBackReboting.js"></script>
     <script src="javascript/Background.js"></script>
+    <script src="javascript/popUpWin.js"></script>
 
     <script>
         // Init TWA
@@ -83,5 +98,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

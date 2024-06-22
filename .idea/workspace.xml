@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/javascript/popUpWin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/Brush.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/Dangerous.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/LogoWithOutPhone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/Strelochka.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/UserColor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userColorCreation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.html" beforeDir="false" afterPath="$PROJECT_DIR$/customization.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deadReactorNotification.html" beforeDir="false" afterPath="$PROJECT_DIR$/deadReactorNotification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quests.html" beforeDir="false" afterPath="$PROJECT_DIR$/quests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userBGcreation.html" beforeDir="false" afterPath="$PROJECT_DIR$/userBGcreation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +56,7 @@
     &quot;Node.js.scratch.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/JS/YandexContest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Clones/KP229-telegram-app/pictures&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -55,7 +71,11 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Clones\KP229-telegram-app\pictures" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\Clones\KP229-telegram-app\pictures" />
       <recent name="D:\Work\Clones\KP229-telegram-app\test" />
     </key>
   </component>
@@ -85,6 +105,7 @@
       <workItem from="1718912830883" duration="77000" />
       <workItem from="1718980727335" duration="4402000" />
       <workItem from="1719000926422" duration="2358000" />
+      <workItem from="1719042193656" duration="13475000" />
     </task>
     <servers />
   </component>

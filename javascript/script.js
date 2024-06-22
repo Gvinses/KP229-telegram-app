@@ -30,9 +30,22 @@ window.onload = loadIt()
 window.onload = parser()
 window.onload = numbers()
 window.onload = tapValueCorrect()
-window.onload = setUserBG()
+window.onload = BGsetter()
 
+function BGsetter() {
+    let betterUserBG = localStorage.getItem('betterUserBG')
 
+    if (betterUserBG.includes('#')){
+        let userColor = localStorage.getItem('betterUserBG');
+        $('body').css('background-color', userColor)
+        console.log(userColor);
+        console.log('ffff')
+    } else {
+        $('body').css('background-image', betterUserBG)
+        console.log(betterUserBG);
+        console.log('Color')
+    }
+}
 function tapValueCorrect() {
     if (parseInt(localStorage.getItem('tapValue')) <= 0){
         localStorage.setItem('tapValue', 1);
@@ -56,7 +69,7 @@ function parser(){
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore() {  
+function incrementScore() {
     
     if (localStorage.getItem('haveReactor?') === 'true') {
         reactor()
@@ -92,6 +105,8 @@ function incrementScore() {
             picToClick.css("transform", "scale(1)")
         }, 200);
     }
+
+    BGsetter()
 }
 
 function numbers(){
@@ -153,3 +168,5 @@ document.getElementById('Home').addEventListener('click', function() {
     localStorage.getItem('tapValue', tapValue);
     loadIt()
 });
+
+
