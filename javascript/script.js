@@ -35,15 +35,17 @@ window.onload = BGsetter()
 function BGsetter() {
     let betterUserBG = localStorage.getItem('betterUserBG')
 
-    if (betterUserBG.includes('#')){
-        let userColor = localStorage.getItem('betterUserBG');
-        $('body').css('background-color', userColor)
-        console.log(userColor);
-        console.log('ffff')
-    } else {
-        $('body').css('background-image', betterUserBG)
-        console.log(betterUserBG);
-        console.log('Color')
+    if (betterUserBG !== null){
+        if (betterUserBG.includes('#')){
+            let userColor = localStorage.getItem('betterUserBG');
+            $('body').css('background-color', userColor)
+            console.log(userColor);
+            console.log('ffff')
+        } else {
+            $('body').css('background-image', betterUserBG)
+            console.log(betterUserBG);
+            console.log('Color')
+        }
     }
 }
 function tapValueCorrect() {
@@ -70,11 +72,6 @@ function parser(){
 }
 
 function incrementScore() {
-    
-    if (localStorage.getItem('haveReactor?') === 'true') {
-        reactor()
-    }
-
     // console.log(supabase);
     localStorage.setItem('energy', energy);
 
@@ -87,6 +84,10 @@ function incrementScore() {
         }, 1000)
 
     } else {
+        if (localStorage.getItem('haveReactor?') === 'true') {
+            reactor()
+        }
+
         localStorage.getItem('score', score);
 
         score += tapValue;
