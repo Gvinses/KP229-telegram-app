@@ -518,3 +518,13 @@ a{
         display: inline;
     }
 }
+@media (max-width: 543px) {
+    #forUserBG{
+        width: 200px;
+    }
+}
+@media (max-width: 403px) {
+    #forUserBG{
+        width: 130px;
+    }
+}
