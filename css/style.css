@@ -13,7 +13,6 @@ body{
     align-content: center;
     flex-direction: column;
 
-    overflow-x: hidden;
     background: black;
     color: white;
     font-family: "Calibri Light", sans-serif;
