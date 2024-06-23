@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link type="image/x-icon" href="pictures/Logo.jpg" rel="shortcut icon">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="javascript/jquery-3.7.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     
@@ -15,24 +17,15 @@
         <div class="CustomContainer">
 
             <div class="Background" id="background">
-                <h1>Туториал</h1>
-
-                <p>1. Переходи на сайт <a href="https://ru.imgbb.com" target="_blank">https://ru.imgbb.com</a></p>
-                <p>2. Нажимай "начать загрузку"</p>
-                <p>3. Выбеери файл </p>
-                <p>4. Перейди по ссылке</p>
-                <p>5. Пролистни вниз и найди "Код изображения оригинальный размер со ссылкой => HTML"</p>
-                <p>6. Скопируй ссылку которая идёт img src="xxxxxxx" и вставь её</p>
-
                 <span class="IOBG">
                     <h1>Свой Фон</h1>
-                    <span class="IOBGup">
-                        <input style="padding: 5px; border: none; outline: none; border-radius: 35px" id="forUserBG" type="text" placeholder="ссылка">
-                        <button style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="userBGChange()">Показать</button>
+                    <span class="IOBGup" id="gradient">
+                        <input id="forUserBG" type="file">
+                        <button style="color: white; background: #323232; padding: 14px; border-radius: 35px" onclick="userBGChange()">Показать</button>
                     </span>
                     <span class="IOBGdown">
                         <img src="" id="outputOfBG" width="100px">
-                        <button id="toComplete" style="color: white; background: #323232; padding: 5px; border-radius: 35px" onclick="textChecker()">Установить</button>
+                        <button id="toComplete" onclick="textChecker()">Установить</button>
                     </span>
 
 
@@ -66,6 +59,7 @@
     <script src="javascript/energyBackReboting.js"></script>
     <script src="javascript/Background.js"></script>
     <script src="javascript/popUpWin.js"></script>
+    <script src="javascript/gradientChangeable.js"></script>
 
     <script>
         // Init TWA

@@ -1,11 +1,28 @@
 let toComplete = document.getElementById("toComplete");
 toComplete.innerHTML = ''
 
+
+document.getElementById('forUserBG').addEventListener('change', userBGChange, false)
 function userBGChange() {
     let userBG = document.getElementById('forUserBG');
     let output = document.getElementById('outputOfBG');
 
     output.src = userBG.value
+
+    if (userBG.files && userBG.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const imageUrl = e.target.result;
+            output.src = imageUrl;
+
+            // Сохранить ссылку на изображение в локальном хранилище (необязательно)
+            localStorage.setItem('backgroundImage', imageUrl);
+        };
+        reader.readAsDataURL(userBG.files[0]);
+    }
+    // if (localStorage.getItem('backgroundImage')) {
+    //     document.body.style.backgroundImage = `url(${localStorage.getItem('backgroundImage')})`;
+    // }
 
     localStorage.setItem('userBG', userBG.value);
     toComplete.innerHTML = "Установить"
@@ -30,6 +47,9 @@ function betterUserBGText() {
     console.log(betterUserBG)
     localStorage.setItem('betterUserBG', betterUserBG)
 }
+
+
+
 function setUserBG() {
     betterUserBGText()
 
@@ -52,6 +72,7 @@ function setUserBG() {
 // document.onload = betterUserBGText()
 function blackBG() {
     localStorage.setItem('betterUserBG', 'black')
+    localStorage.setItem('backgroundImage', null)
     let backgroundColor = 'black'
     $('body').css('background-image', backgroundColor)
 }

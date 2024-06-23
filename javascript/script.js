@@ -33,19 +33,8 @@ window.onload = tapValueCorrect()
 window.onload = BGsetter()
 
 function BGsetter() {
-    let betterUserBG = localStorage.getItem('betterUserBG')
-
-    if (betterUserBG !== null){
-        if (betterUserBG.includes('#')){
-            let userColor = localStorage.getItem('betterUserBG');
-            $('body').css('background-color', userColor)
-            console.log(userColor);
-            console.log('ffff')
-        } else {
-            $('body').css('background-image', betterUserBG)
-            console.log(betterUserBG);
-            console.log('Color')
-        }
+    if (localStorage.getItem('backgroundImage')) {
+        document.body.style.backgroundImage = `url(${localStorage.getItem('backgroundImage')})`;
     }
 }
 function tapValueCorrect() {
