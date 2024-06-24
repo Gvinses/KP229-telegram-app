@@ -3,11 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    touch-action: none;
-}
 body{
-    touch-action: none;
+    
     display: flex;
     justify-content: center;
     align-content: center;
@@ -18,6 +15,8 @@ body{
     font-family: "Calibri Light", sans-serif;
 
     margin: auto;
+
+    overflow-x: hidden;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
