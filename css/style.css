@@ -19,8 +19,6 @@ body{
 
     margin: auto;
 
-    overflow: scroll
-
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
     /*-html-user-select: none;    !* Konqueror *!*/
