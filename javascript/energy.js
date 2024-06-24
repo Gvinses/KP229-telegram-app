@@ -28,9 +28,10 @@ function Energy() {
     timer()
 }
 
+let intervalId
+
 function timer(){
     if(energy <= 0){
-        let intervalId
         console.log(userEnergy.innerText)
         console.log(maxEnergy)
         setTimeout(() => {
@@ -51,5 +52,8 @@ function energyReset() {
     }
 }
 
+function stopEnergy() {
+    clearInterval(intervalId)
+}
 
 
