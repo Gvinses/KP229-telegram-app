@@ -61,6 +61,7 @@ function parser(){
 }
 
 function incrementScore() {
+    AntiCheat()
     // console.log(supabase);
     localStorage.setItem('energy', energy);
 

@@ -26,6 +26,7 @@ def main_message(message):
             file.write(f"His Username: {message.from_user.username}\n")
             file.write("-----------------\n")
 
+
 @bot.message_handler(commands=['pingUS'])
 def send_welcome(message: types.Message):
     if message.chat.type == 'private':
