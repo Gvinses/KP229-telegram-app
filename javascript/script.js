@@ -94,6 +94,8 @@ function incrementScore() {
         setTimeout(() => {
             picToClick.css("transform", "scale(1)")
         }, 200);
+
+        stopEnergy() 
     }
 
     BGsetter()
