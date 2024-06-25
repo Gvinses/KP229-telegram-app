@@ -2,8 +2,8 @@ let isBlocked = false;
 let clickCount = 0;
 let lastClickTime = 0;
 
-
-window.onload = function isUserBlocked() {
+window.onload = isUserBlocked() 
+function isUserBlocked() {
   if (localStorage.getItem('isBlocked') === 'true'){
     goToBlock()
   } else if (localStorage.getItem('isBlocked') === 'false'){
