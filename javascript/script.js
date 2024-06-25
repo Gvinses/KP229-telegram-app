@@ -31,6 +31,7 @@ window.onload = parser()
 window.onload = numbers()
 window.onload = tapValueCorrect()
 window.onload = BGsetter()
+window.onload = isUserBlocked()
 
 function BGsetter() {
     if (localStorage.getItem('backgroundImage')) {
