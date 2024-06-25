@@ -9,7 +9,8 @@ function updateTimer() {
         localStorage.setItem("time", Number(timerNum))
         timer.innerHTML = timerNum
     }
-
+    localStorage.setItem("time",              Number(timerNum))
+    timer.innerHTML = timerNum
 
     timerNum = parseInt(localStorage.getItem("time"))
     timerNum = Number(timerNum - 1)
