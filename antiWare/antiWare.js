@@ -2,15 +2,14 @@ let isBlocked = false;
 let clickCount = 0;
 let lastClickTime = 0;
 
-window.onload = isUserBlocked() 
 function isUserBlocked() {
-  if (localStorage.getItem('isBlocked') === 'true'){
+  console.log("userCheck")
+  if (localStorage.getItem('isBlocked') === true){
     goToBlock()
   } else if (localStorage.getItem('isBlocked') === 'false'){
     clearInterval(interval)  
     window.location.href = "../index.html"
-  };
-  if (localStorage.getItem('isBlocked') === null){
+  } else if (localStorage.getItem('isBlocked') === null){
     localStorage.setItem('isBlocked', 'false')
   }
   
@@ -24,7 +23,7 @@ function AntiCheat() {
     lastTimeBetweenClick = localStorage.getItem('clickBetweenTime')
   }
 
-  let clickBetweenTime = now - lastClickTime;
+  let clickBetweenTime = Number(now - lastClickTime)
   localStorage.setItem('clickBetweenTime', clickBetweenTime)
 
   // if (now - lastClickTime > 50) {
@@ -34,32 +33,34 @@ function AntiCheat() {
   //   clickCount++;
   // }
 
-  if ((clickBetweenTime !== lastTimeBetweenClick) || ((now - lastClickTime) < 50)) {
+  if (now - lastClickTime > 500){ //(clickBetweenTime !== lastTimeBetweenClick)
     clickCount = 0;
     console.log(now-lastClickTime + ' speed of clicks')
+    console.log(clickCount)
   } else {
     clickCount++;
   }
 
   if (clickCount > 10) {
+    localStorage.removeItem('timerTime')
     isBlocked = true;
     localStorage.setItem('isBlocked', true);
     setTimeout(() => {
-      isBlocked = false;
+      isBlocked = false;           
       localStorage.setItem('isBlocked', false);
       clickCount = 0;
     }, 300000);
 
     // document.body.classList.add('blocked');
-
-    localStorage.setItem("time", 300000)
-    window.open = 'https://gvinses.github.io/KP229-telegram-app/antiWare/block.html'
+    window.location.href = '../antiWare/block.html'
+    
   }
 
   // Выполнить действие кнопки
   lastClickTime = now;
-};
-
+}
 function goToBlock() {
-  window.open = 'https://gvinses.github.io/KP229-telegram-app/antiWare/block.html'
+  if (localStorage.getItem('isBlocked') === true) {
+    window.location.href = '../antiWare/block.html'
+  }  
 }

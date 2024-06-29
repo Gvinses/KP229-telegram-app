@@ -2,14 +2,60 @@ let toComplete = document.getElementById("toComplete");
 toComplete.innerHTML = ''
 
 
-document.getElementById('forUserBG').addEventListener('change', userBGChange, false)
+// document.getElementById('forUserBG').addEventListener('change', userBGChange, false)
+// function userBGChange() {
+
+//     localStorage.removeItem('betterUserBG')
+//     localStorage.removeItem('backgroundImage')
+
+//     let userBG = document.getElementById('forUserBG');
+//     let output = document.getElementById('outputOfBG');
+
+//     output.src = userBG.value
+
+//     if (userBG.files && userBG.files[0]) {
+//         const reader = new FileReader();
+//         reader.onload = function(e) {
+//             const imageUrl = e.target.result;
+//             output.src = imageUrl;
+
+//             // Сохранить ссылку на изображение в локальном хранилище (необязательно)
+//             localStorage.setItem('backgroundImage', imageUrl);
+//         };
+//         reader.readAsDataURL(userBG.files[0]);
+//     }
+//     // if (localStorage.getItem('backgroundImage')) {
+//     //     document.body.style.backgroundImage = `url(${localStorage.getItem('backgroundImage')})`;
+//     // }
+
+//     localStorage.setItem('userBG', userBG.value);
+//     toComplete.innerHTML = "Установить"
+// }
+
+// function userColorChange() {
+//     localStorage.setItem('backgroundImage', null)
+//     let toUseUserBGColorVarible = document.getElementById('forUserColor')
+//     let backgroundColor = toUseUserBGColorVarible.value
+//     localStorage.setItem('betterUserBG', toUseUserBGColorVarible.value)
+//     $('body').css('background', backgroundColor)
+//     localStorage.setItem('backgroundColor', toUseUserBGColorVarible.value)
+//     hidePopup2()
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
 function userBGChange() {
+
+    localStorage.removeItem('betterUserBG')
+    localStorage.removeItem('backgroundImage')
+
     let userBG = document.getElementById('forUserBG');
     let output = document.getElementById('outputOfBG');
 
     output.src = userBG.value
 
     if (userBG.files && userBG.files[0]) {
+        localStorage.removeItem('backgroundColor');
         const reader = new FileReader();
         reader.onload = function(e) {
             const imageUrl = e.target.result;
@@ -28,62 +74,35 @@ function userBGChange() {
     toComplete.innerHTML = "Установить"
 }
 
-function textChecker(){
-    let userBG = document.getElementById('forUserBG');
-    if (userBG.value !== ''){
-        showPopup()
-    } else {
-        userBG.placeholder = "ВВЕДИТЕ ССЫЛКУ"
-        setTimeout( function () {
-            userBG.placeholder = 'ссылка'
-        }, 2500)
-    }
-}
-
-let betterUserBG;
-function betterUserBGText() {
-    let userBG = localStorage.getItem('userBG')
-    betterUserBG = 'url("' + userBG + '")';
-    console.log(betterUserBG)
-    localStorage.setItem('betterUserBG', betterUserBG)
-}
-
-
-
-function setUserBG() {
-    betterUserBGText()
-
-    betterUserBG = localStorage.getItem('betterUserBG')
-
-    if (betterUserBG.includes('#')){
-        let userColor = localStorage.getItem('betterUserBG');
-        $('body').css('background-color', userColor)
-        console.log(userColor);
-        console.log('ffff')
-    } else {
-        $('body').css('background-image', betterUserBG)
-        console.log(betterUserBG);
-        console.log('Color')
-    }
-
-    if (isPopUp === true) hidePopup()
-}
-
-// document.onload = betterUserBGText()
-function blackBG() {
-    localStorage.setItem('betterUserBG', 'black')
-    localStorage.setItem('backgroundImage', null)
-    let backgroundColor = 'black'
-    $('body').css('background-image', backgroundColor)
-}
-
-
-
 
 function userColorChange() {
-    let userColor = document.getElementById('forUserColor')
-    $('body').css('background-image', userColor.value)
-    localStorage.setItem('betterUserBG', userColor.value);
-    console.log(userColor.value);
-    if (isPopUp === true) hidePopup2()
+    localStorage.removeItem('backgroundImage');
+    let toUseUserBGColorVarible = document.getElementById('forUserColor');
+    let backgroundColor = toUseUserBGColorVarible.value;
+    localStorage.setItem('backgroundColor', backgroundColor);
+    $('body').css('background-color', backgroundColor);
+    hidePopup2();
 }
+
+// ...
+
+// Background.js
+
+// Function to set the background color or image based on user's preference
+function setBackground() {
+    // Check if user has selected a background color
+    if (localStorage.getItem('backgroundColor')) {
+        let userColorOfBG = localStorage.getItem('backgroundColor');
+        $('body').css('background-color', userColorOfBG);
+        localStorage.removeItem('backgroundImage'); // Clear background image if color is selected
+    }
+  
+    // Check if user has uploaded a background image
+    if (localStorage.getItem('backgroundImage')) {
+        let userBackgroundImage = localStorage.getItem('backgroundImage');
+        $('body').css('background-image', `url(${userBackgroundImage})`);
+        localStorage.removeItem('backgroundColor'); // Clear background color if image is selected
+    }
+}
+
+// Call the setBackground function when the window loads

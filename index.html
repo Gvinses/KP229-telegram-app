@@ -8,6 +8,8 @@
     <link type="image/x-icon" href="pictures/Logo.jpg" rel="shortcut icon">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="javascript/jquery-3.7.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <main>
@@ -19,7 +21,7 @@
             </div>
             <span class="clickerPart">
                 <button onclick="incrementScore()">
-                    <img id="toClick" src="pictures/LogoWithOutPhone.png"/>
+                    <img id="toClick" src="pictures/KP229 logoInvert.png"/>
                 </button>
             </span>
             
@@ -39,7 +41,6 @@
         </div>
     </main>
 
-
     <script src="javascript/script.js"></script>
     <script src="javascript/userSelect.js"></script>
     <script src="javascript/energy.js"></script>
@@ -47,7 +48,10 @@
     <script src="javascript/NuclearReactorLogic.js"></script>
     <script src="javascript/energyBackReboting.js"></script>
     <script src="javascript/Background.js"></script>
+    <script src="javascript/popUpWin.js"></script>
+    <script src="javascript/gradientChangeable.js"></script>
     <script src="antiWare/antiWare.js"></script>
+    <script src="antiWare/timer.js"></script>
 
     <script>
         // Init TWA
@@ -61,7 +65,7 @@
 
         function setViewportData() {
             var sizeEl = document.getElementById('viewport-params-size');
-            sizeEl.innerText = 'width: ' + window.innerWidth + ' x ' + 
+            sizeEl.innerText = 'width: ' + window.innerWidth + ' x ' +
                 'height: ' + Telegram.WebApp.viewportStableHeight;
 
             var expandEl = document.querySelector('#viewport-params-expand');
@@ -80,6 +84,7 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script src="javascript/script.js"></script>
     
 </body>
 </html>

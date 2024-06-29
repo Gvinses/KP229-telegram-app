@@ -32,12 +32,19 @@ window.onload = numbers()
 window.onload = tapValueCorrect()
 window.onload = BGsetter()
 window.onload = isUserBlocked()
+window.onload = setBackground();
+window.onload = goToBlock()
 
 function BGsetter() {
     if (localStorage.getItem('backgroundImage')) {
         document.body.style.backgroundImage = `url(${localStorage.getItem('backgroundImage')})`;
     }
+    if (localStorage.getItem('backgroundColor')) {
+        document.body.style.backgroundColor = localStorage.getItem('backgroundColor');
+    }
 }
+
+
 function tapValueCorrect() {
     if (parseInt(localStorage.getItem('tapValue')) <= 0){
         localStorage.setItem('tapValue', 1);
@@ -63,6 +70,7 @@ function parser(){
 
 function incrementScore() {
     AntiCheat()
+    goToBlock()
     // console.log(supabase);
     localStorage.setItem('energy', energy);
 
@@ -96,11 +104,15 @@ function incrementScore() {
         setTimeout(() => {
             picToClick.css("transform", "scale(1)")
         }, 200);
-
-        stopEnergy() 
     }
 
     BGsetter()
+    if (IsEnergyReseting === true){
+        setTimeout(() => {
+            location.reload()
+            IsEnergyReseting = false
+        }, 50)
+    }
 }
 
 function numbers(){

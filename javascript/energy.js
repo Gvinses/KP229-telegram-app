@@ -36,24 +36,34 @@ function timer(){
         console.log(maxEnergy)
         setTimeout(() => {
             intervalId = setInterval(energyReset, 1000);
-        }, 1000)
+        }, 700)
     }
 }
+
+let IsEnergyReseting = false
 
 function energyReset() {
     if (energy < maxEnergy) {
         energy += 1;
         localStorage.setItem('energy', energy);
         userEnergy.innerHTML = energy;
+        IsEnergyReseting = true
     } else {
         location.reload()
         let EnegryToLocal = userEnergy.innerHTML
         localStorage.setItem('energy', EnegryToLocal);
+        IsEnergyReseting = false
     }
 }
 
-function stopEnergy() {
-    clearInterval(intervalId)
-}
+// function stopEnergy() {
+//     let EnergyWhenUSClick = energy
+//     localStorage.setItem('SavedEnergy', EnergyWhenUSClick);
+//     energy = maxEnergy
+//     localStorage.setItem('energy', energy);
+//     energyReset()
+//     energy = parseInt(localStorage.getItem('SavedEnergy'));
+//     localStorage.setItem('energy', energy);
+// }
 
 
