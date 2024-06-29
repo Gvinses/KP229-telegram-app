@@ -22,7 +22,7 @@ function AntiCheat() {
   if (localStorage.getItem('clickBetweenTime') !== null) {
     lastTimeBetweenClick = localStorage.getItem('clickBetweenTime')
   }
-
+//https://gvinses.github.io/KP229-telegram-app/antiWare/block.html
   let clickBetweenTime = Number(now - lastClickTime)
   localStorage.setItem('clickBetweenTime', clickBetweenTime)
 
@@ -33,7 +33,7 @@ function AntiCheat() {
   //   clickCount++;
   // }
 
-  if (now - lastClickTime > 500){ //(clickBetweenTime !== lastTimeBetweenClick)
+  if (clickBetweenTime !== lastTimeBetweenClick){ //
     clickCount = 0;
     console.log(now-lastClickTime + ' speed of clicks')
     console.log(clickCount)
@@ -52,7 +52,7 @@ function AntiCheat() {
     }, 300000);
 
     // document.body.classList.add('blocked');
-    window.location.href = '../antiWare/block.html'
+    window.location.href = 'https://gvinses.github.io/KP229-telegram-app/antiWare/block.html'
     
   }
 
@@ -61,6 +61,6 @@ function AntiCheat() {
 }
 function goToBlock() {
   if (localStorage.getItem('isBlocked') === true) {
-    window.location.href = '../antiWare/block.html'
+    window.location.href = 'https://gvinses.github.io/KP229-telegram-app/antiWare/block.html'
   }  
 }
