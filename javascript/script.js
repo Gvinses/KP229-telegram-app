@@ -98,7 +98,6 @@ function incrementScore() {
         
         loadIt()
         numbers()
-        Energy()
     
         picToClick.css("transform", "scale(1)")
         setTimeout(() => {
