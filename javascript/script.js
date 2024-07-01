@@ -71,6 +71,7 @@ function parser(){
 function incrementScore() {
     AntiCheat()
     goToBlock()
+    Energy() 
     // console.log(supabase);
     localStorage.setItem('energy', energy);
 
