@@ -71,7 +71,7 @@ function parser(){
 function incrementScore() {
     AntiCheat()
     goToBlock()
-    if (energy >= 0) {
+    if (energy > 0) {
     Energy() 
 }
     // console.log(supabase);
