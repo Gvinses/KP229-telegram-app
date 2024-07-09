@@ -7,12 +7,8 @@ button.addEventListener('click', function(event) {
 
 if (timeDiff < 250) {
 // Двойное нажатие! Выполнить функцию
-    console.log('Двойное нажатие!');
+   // console.log('Двойное нажатие!');
     deleteAccount(); // Замените на свою функцию
-} else {
-// Одинарное нажатие
-    console.log('Одинарное нажатие');
-}
 
     lastClickTime = currentTime;
 });
@@ -23,18 +19,18 @@ function deleteAccount() {
 }
 
 function reborn() {
-    console.log("Reborn!");
+    //console.log("Reborn!");
     if (score >= 1000000) {
         localStorage.getItem('tapValue', tapValue);
         localStorage.getItem('score', score);
-        score -= 10000;
+        score -= 1000000;
         localStorage.setItem('score', score);
-        tapValue = tapValue * 1.2;
+        tapValue = tapValue * 1.02;
         localStorage.setItem('tapValue', tapValue); // Store tapValue in local storage
-        console.log("1.1")
+       // console.log("1.1")
     } else {
         document.getElementById('ReError').innerText = 'Не хватает!';
-        console.log("!!!!!1!!!!!")
+      //  console.log("!!!!!1!!!!!")
 
         setTimeout(function () {
             document.getElementById('ReError').innerText = '';
