@@ -33,6 +33,7 @@ function Energy() {
             $('#userEnergy').css("color", "#fff")
             $('#userMaxEnergy').css("color", "#fff");
         }, 1000)
+       energy = 0
     }
 }
 
