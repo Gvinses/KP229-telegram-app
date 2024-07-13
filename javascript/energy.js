@@ -23,18 +23,8 @@ function Energy() {
 
         userEnergy.innerHTML = energy;
 
-        console.log(">>>>" + energy)
-        
-    if (energy <= 0) {
-        $('#userEnergy').css("color", "red")
-        $('#userMaxEnergy').css("color", "red");
-        setTimeout(() => {
-            $('#userEnergy').css("color", "#fff")
-            $('#userMaxEnergy').css("color", "#fff");
-        }, 1000)
-       energy = 0
-       timer() 
-    }
+        //console.log(">>>>" + energy)
+       
 }
 
 let intervalId
