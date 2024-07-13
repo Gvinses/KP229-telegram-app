@@ -73,8 +73,7 @@ function incrementScore() {
     goToBlock()
     if (energy > 0) {
         Energy() 
-    } else {
-    // console.log(supabase);
+         // console.log(supabase);
     localStorage.setItem('energy', energy);
 
         if (localStorage.getItem('haveReactor?') === 'true') {
@@ -104,7 +103,17 @@ function incrementScore() {
             location.reload()
             IsEnergyReseting = false
         }, 50)
-      }
+    } else {
+   
+      
+$('#userEnergy').css("color", "red")
+        $('#userMaxEnergy').css("color", "red");
+        setTimeout(() => {
+            $('#userEnergy').css("color", "#fff")
+            $('#userMaxEnergy').css("color", "#fff");
+        }, 1000)
+
+}
     }
 }
 
