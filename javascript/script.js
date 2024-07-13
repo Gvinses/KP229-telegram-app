@@ -98,11 +98,11 @@ function incrementScore() {
         }, 200);
 
     BGsetter()
-    if (IsEnergyReseting === true){
-        setTimeout(() => {
-            location.reload()
-            IsEnergyReseting = false
-        }, 50)
+        if (IsEnergyReseting === true){
+            setTimeout(() => {
+                location.reload()
+                IsEnergyReseting = false
+            }, 50)
     } else {     
 $('#userEnergy').css("color", "red")
         $('#userMaxEnergy').css("color", "red");
