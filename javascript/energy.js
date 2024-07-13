@@ -24,15 +24,13 @@ function Energy() {
         userEnergy.innerHTML = energy;
 
         //console.log(">>>>" + energy)
-       
+        timer() 
 }
 
 let intervalId
 
 function timer(){
     if(energy <= 0){
-        console.log(userEnergy.innerText)
-        console.log(maxEnergy)
         setTimeout(() => {
             intervalId = setInterval(energyReset, 1000);
         }, 700)
