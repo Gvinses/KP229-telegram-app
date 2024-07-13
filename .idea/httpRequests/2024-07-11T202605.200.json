@@ -1,0 +1,17 @@
+{
+  "args": {
+    "generated-in": "WebStorm"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "br, deflate, gzip, x-gzip",
+    "Content-Length": "0",
+    "Host": "examples.http-client.intellij.net",
+    "User-Agent": "IntelliJ HTTP Client/WebStorm 2024.1.2",
+    "X-Forwarded-Host": "examples.http-client.intellij.net",
+    "X-Forwarded-Scheme": "https",
+    "X-Scheme": "https"
+  },
+  "origin": "93.170.32.161",
+  "url": "https://examples.http-client.intellij.net/get?generated-in=WebStorm"
+}

@@ -1,0 +1,90 @@
+GET http://kringeproduction.ru/api/users/
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202615.200.json
+
+###
+
+GET https://examples.http-client.intellij.net/get?generated-in=WebStorm
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202605.200.json
+
+###
+
+GET http://kringeproduction.ru/api/users/
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202454.200.json
+
+###
+
+POST http://kringeproduction.ru/api/users/
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202321.400.json
+
+###
+
+GET http://kringeproduction.ru/api/users/
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202228.200.json
+
+###
+
+GET https://gvinses.github.io/KP229-telegram-app/antiWare/block.html
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202221.200.html
+
+###
+
+GET http://kringeproduction.ru/api/users/
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202217.200.json
+
+###
+
+GET http://kringeproduction.ru/api/users/
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202009.200.json
+
+###
+
+GET https://gvinses.github.io/KP229-telegram-app/antiWare/block.html
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T202002.200.html
+
+###
+

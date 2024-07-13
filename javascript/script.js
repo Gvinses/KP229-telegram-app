@@ -71,22 +71,10 @@ function parser(){
 function incrementScore() {
     AntiCheat()
     goToBlock()
-    if (energy >= 0) {
-    Energy() 
-    if (energy === -1) Energy++
-}
+    Energy()
     // console.log(supabase);
     localStorage.setItem('energy', energy);
 
-    if (energy <= 0) {
-        $('#userEnergy').css("color", "red")
-        $('#userMaxEnergy').css("color", "red");
-        setTimeout(() => {
-            $('#userEnergy').css("color", "#fff")
-            $('#userMaxEnergy').css("color", "#fff");
-        }, 1000)
-
-    } else {
         if (localStorage.getItem('haveReactor?') === 'true') {
             reactor()
         }
@@ -107,7 +95,6 @@ function incrementScore() {
         setTimeout(() => {
             picToClick.css("transform", "scale(1)")
         }, 200);
-    }
 
     BGsetter()
     if (IsEnergyReseting === true){
