@@ -17,7 +17,6 @@ if (localStorage.getItem('max-energy') === null) {
 }
 
 function Energy() {
-    if (energy > 0) {
         energy -= 1;
 
         localStorage.setItem('energy', energy);
@@ -26,7 +25,7 @@ function Energy() {
 
         console.log(">>>>" + energy)
         timer()
-    } else {
+    if (energy <= 0) {
         $('#userEnergy').css("color", "red")
         $('#userMaxEnergy').css("color", "red");
         setTimeout(() => {
