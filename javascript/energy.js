@@ -33,7 +33,7 @@ function timer(){
     if(energy <= 0){
         setTimeout(() => {
             intervalId = setInterval(energyReset, 1000);
-        }, 700)
+        }, 7000)
     }
 }
 window.onload = timer() 
