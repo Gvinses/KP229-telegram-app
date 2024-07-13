@@ -36,7 +36,7 @@ function timer(){
         }, 700)
     }
 }
-
+window.onload = timer() 
 let IsEnergyReseting = false
 
 function energyReset() {
