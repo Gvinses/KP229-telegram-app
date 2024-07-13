@@ -103,9 +103,7 @@ function incrementScore() {
             location.reload()
             IsEnergyReseting = false
         }, 50)
-    } else {
-   
-      
+    } else {     
 $('#userEnergy').css("color", "red")
         $('#userMaxEnergy').css("color", "red");
         setTimeout(() => {
@@ -113,7 +111,7 @@ $('#userEnergy').css("color", "red")
             $('#userMaxEnergy').css("color", "#fff");
         }, 1000)
 
-}
+        }
     }
 }
 
