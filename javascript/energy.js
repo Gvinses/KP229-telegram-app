@@ -24,7 +24,7 @@ function Energy() {
         userEnergy.innerHTML = energy;
 
         console.log(">>>>" + energy)
-        timer()
+        
     if (energy <= 0) {
         $('#userEnergy').css("color", "red")
         $('#userMaxEnergy').css("color", "red");
@@ -33,6 +33,7 @@ function Energy() {
             $('#userMaxEnergy').css("color", "#fff");
         }, 1000)
        energy = 0
+       timer() 
     }
 }
 
