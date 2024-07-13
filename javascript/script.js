@@ -103,13 +103,13 @@ function incrementScore() {
                 location.reload()
                 IsEnergyReseting = false
             }, 50)
-    } else {     
-$('#userEnergy').css("color", "red")
-        $('#userMaxEnergy').css("color", "red");
-        setTimeout(() => {
-            $('#userEnergy').css("color", "#fff")
-            $('#userMaxEnergy').css("color", "#fff");
-        }, 1000)
+    } else if (energy <= 0) {     
+                $('#userEnergy').css("color", "red")
+                $('#userMaxEnergy').css("color", "red");
+            setTimeout(() => {
+                $('#userEnergy').css("color",   "#fff")
+                $      ('#userMaxEnergy').css("color", "#fff");
+            }, 1000)
 
         }
     }
