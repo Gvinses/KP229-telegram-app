@@ -1,5 +1,3 @@
-// import supabase from "../DB/supabaseClient";
-
 window.onload = localStorageChecker()
 window.onload = isUserRegistrate()
 
@@ -28,8 +26,8 @@ function localStorageChecker() {
 }
 
 function isUserRegistrate() {
-    let helper = document.getElementById('helper')
     if (localStorage.getItem('username') === null) {
+        let helper = document.getElementById('helper')
         helper.style.position = 'relative'
         helper.innerText = '⬅️Нужно войти в аккаунт!!!!!'
         setTimeout(() => {
@@ -45,9 +43,6 @@ function isUserRegistrate() {
         localStorage.setItem('tapValue', tapValue)
         localStorage.setItem('energy', energy)
         localStorage.setItem('haveReactor?', false)
-    } else {
-        helper.innerText = ''
-        helper.style.position = 'absolute'
     }
 }
 
@@ -93,11 +88,10 @@ function parser(){
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore() {
+function incrementScore(key) {
     AntiCheat()
     goToBlock()
-    if (energy > 0) {
-        Energy() 
+    Energy()
          // console.log(supabase);
     localStorage.setItem('energy', energy);
 
@@ -105,7 +99,7 @@ function incrementScore() {
             reactor()
         }
 
-        localStorage.getItem('score', score);
+        score = localStorage.getItem('score');
 
         score += tapValue;
         scoreElement.innerText = score;
@@ -128,7 +122,7 @@ function incrementScore() {
                 location.reload()
                 IsEnergyReseting = false
             }, 50)
-    } else if (energy <= 0) {     
+    } if (energy <= 0) {
                 $('#userEnergy').css("color", "red")
                 $('#userMaxEnergy').css("color", "red");
             setTimeout(() => {
@@ -137,7 +131,6 @@ function incrementScore() {
             }, 1000)
 
         }
-    }
 }
 
 function numbers(){

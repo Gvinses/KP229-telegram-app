@@ -3,8 +3,8 @@ let lastClickTime = 0;
 
 function deleteAccount() {
     localStorage.clear()
-    window.open("https://gvinses.github.io/KP229-telegram-app/", '_parent');
     localStorage.setItem('IsRegister', '1')
+    window.open("https://gvinses.github.io/KP229-telegram-app/", '_parent');
 }
 
 function deleteAccountBefore() {
@@ -12,11 +12,10 @@ function deleteAccountBefore() {
     let timeDiffer = currentTime - lastClickTime;
 
     if (timeDiffer < 250) {
-        console.log("Одиночное нажатие")
-    } else {
-        console.log('Двойное нажатие!');
+        // console.log('Двойное нажатие!');
         deleteAccount();
-
+    } else {
+        // console.log("Одиночное нажатие")
         lastClickTime = currentTime;
     }
 }

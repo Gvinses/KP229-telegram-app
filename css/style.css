@@ -410,6 +410,9 @@ a{
     position: relative;
     bottom: 20px;
 }
+#helper{
+    position: absolute;
+}
 .aboutNewBG{
     display: flex;
     align-items: center;
