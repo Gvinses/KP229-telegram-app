@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DB/EnterAccount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DB/ExportMoney.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exportMoney.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/ExportMony.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/KP229-telegram-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KP229-telegram-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/DBS.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/DBS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/antiWare/antiWare.js" beforeDir="false" afterPath="$PROJECT_DIR$/antiWare/antiWare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/energy.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/energy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/popUpWin.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/popUpWin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quests.html" beforeDir="false" afterPath="$PROJECT_DIR$/accountRegInto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +149,7 @@
       <workItem from="1721210187513" duration="2150000" />
       <workItem from="1721215495726" duration="729000" />
       <workItem from="1721242760029" duration="268000" />
-      <workItem from="1721384355694" duration="5872000" />
+      <workItem from="1721384355694" duration="6651000" />
     </task>
     <servers />
   </component>

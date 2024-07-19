@@ -11,10 +11,10 @@ function deleteAccountBefore() {
     let currentTime = Date.now();
     let timeDiffer = currentTime - lastClickTime;
 
-    if (timeDiffer > 250) {
-        //console.log("Одиночное нажатие")
+    if (timeDiffer < 250) {
+        console.log("Одиночное нажатие")
     } else {
-        //console.log('Двойное нажатие!');
+        console.log('Двойное нажатие!');
         deleteAccount();
 
         lastClickTime = currentTime;
