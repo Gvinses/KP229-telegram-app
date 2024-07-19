@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <div class="exportMain">
+        <div class="ExportMoneyContainer">
+            <div class="roundToDisplayInfoOfLoad">
+                <div class="round" ></div>
+            </div>
+
+            <div class="exportInfo">
+                <p id="howMuchMoney">У вас 0 KPC</p>
+                <label id="howMuchMoneyLabel" for="MoneyInput">Введите, сколько хотите вывести:</label>
+                <input id="MoneyInput" type="text">
+                <button onclick="exportMoney()" id="exportMoneyButton">Вывести!</button>
+            </div>
+
+            <div class="aboutNew">
+                <a href="index.html"><img src="pictures/HomeSVGG.svg" height="70px" width="70px"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script src="javascript/userSelect.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="DB/EnterAccount.js"></script>
+    <script src="DB/ExportMoney.js"></script>
+</body>
+</html>

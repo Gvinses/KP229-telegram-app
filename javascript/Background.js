@@ -84,7 +84,10 @@ function userColorChange() {
     hidePopup2();
 }
 
-// ...
+function blackBG() {
+    localStorage.setItem('backgroundColor', 'black');
+    $('body').css('background-color', 'black');
+}
 
 // Background.js
 

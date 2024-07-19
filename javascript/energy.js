@@ -24,7 +24,7 @@ function Energy() {
 
         userEnergy.innerHTML = energy;
 
-        console.log(">>>>" + energy)
+        // console.log(">>>>" + energy)
         timer()
     } else {
         $('#userEnergy').css("color", "red")
@@ -40,8 +40,8 @@ let intervalId
 
 function timer(){
     if(energy <= 0){
-        console.log(userEnergy.innerText)
-        console.log(maxEnergy)
+        // console.log(userEnergy.innerText)
+        // console.log(maxEnergy)
         setTimeout(() => {
             intervalId = setInterval(energyReset, 1000);
         }, 700)

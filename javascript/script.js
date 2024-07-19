@@ -1,6 +1,7 @@
 // import supabase from "../DB/supabaseClient";
 
 window.onload = localStorageChecker()
+window.onload = isUserRegistrate()
 
 let scoreElement = document.getElementById('Score');
 let tapValue = 1
@@ -19,10 +20,34 @@ function localStorageChecker() {
     if ((localStorage.getItem('energy') === null) || (localStorage.getItem('energy') === 'NaN')) {
         localStorage.setItem('energy', 1000);
         energy = localStorage.getItem('energy')
-        userEnergy.innerText = energy 
+        userEnergy.innerText = energy
     }
     if ((localStorage.getItem('haveReactor?') === null) || (localStorage.getItem('haveReactor?') === NaN)) {
         localStorage.setItem('haveReactor?', false);
+    }
+}
+
+function isUserRegistrate() {
+    let helper = document.getElementById('helper')
+    if (localStorage.getItem('username') === null) {
+        helper.style.position = 'relative'
+        helper.innerText = '⬅️Нужно войти в аккаунт!!!!!'
+        setTimeout(() => {
+            helper.innerText = ''
+            helper.style.position = 'absolute'
+        }, 5000)
+
+        score = 0
+        tapValue = 0
+        energy = 1000
+
+        localStorage.setItem('score', score)
+        localStorage.setItem('tapValue', tapValue)
+        localStorage.setItem('energy', energy)
+        localStorage.setItem('haveReactor?', false)
+    } else {
+        helper.innerText = ''
+        helper.style.position = 'absolute'
     }
 }
 
@@ -107,7 +132,7 @@ function incrementScore() {
 
 function numbers(){
     score = parseInt(localStorage.getItem('score')); // Retrieve score from local storage
-    console.log(score);
+    // console.log(score);
     if (score >= 100000000){
         $(".info").css({
             "flex-direction": "column",
@@ -146,10 +171,6 @@ function loadIt(){
 }
 
 
-function saveScoreToLocalStorage() {
-    localStorage.setItem('tapValue', tapValue);
-    localStorage.setItem('score', score);
-}
 
 document.getElementById('Shop').addEventListener('click', function() {
     score = parseInt(localStorage.getItem('score')); // Load score from local storage

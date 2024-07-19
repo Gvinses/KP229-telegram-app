@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jquery-3.7.1.js"></script>
+</head>
+<body>
+    
+    <div class="TaskMain">
+        <div class="TaskContainer">
+
+            <div class="EnterAccoundDiv">
+                <form id="EnterAccountForm">
+                    <p id="waiting">Ждёт...</p>
+                    <input type="text" id="userNameInput" placeholder="Ваш @Username">
+                    <input type="password" id="userPasswordInput" placeholder="Ваш Пароль">
+                    <button type="button" onclick="enterAccount()" id="submitFormButt">Войти</button>
+                    <button type="button" onclick="dontHaveAccount()" id="dontHaveAnAccount">Нет аккаунта?</button>
+                </form>
+            </div>
+
+            <div class="aboutNew">
+                <a href="index.html"><img src="pictures/HomeSVGG.svg" height="70px" width="70px"></a>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script src="javascript/userSelect.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="DB/EnterAccount.js"></script>
+</body>
+</html>

@@ -35,8 +35,8 @@ function AntiCheat() {
 
   if (clickBetweenTime !== lastTimeBetweenClick){ //
     clickCount = 0;
-    console.log(now-lastClickTime + ' speed of clicks')
-    console.log(clickCount)
+    // console.log(now-lastClickTime + ' speed of clicks')
+    // console.log(clickCount)
   } else {
     clickCount++;
   }
