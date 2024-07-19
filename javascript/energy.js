@@ -17,7 +17,6 @@ if (localStorage.getItem('max-energy') === null) {
 }
 
 function Energy() {
-
     if (energy > 0) {
         energy -= 1;
         localStorage.setItem('energy', energy);
@@ -45,7 +44,7 @@ function timer(){
         }, 7000)
     }
 }
-window.onload = timer
+window.onload = timer()
 let IsEnergyReseting = false
 
 function energyReset() {

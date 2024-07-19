@@ -66,6 +66,7 @@ function BGsetter() {
 
 
 function tapValueCorrect() {
+    score = parseInt(localStorage.getItem('score'));
     if (parseInt(localStorage.getItem('tapValue')) <= 0){
         localStorage.setItem('tapValue', 1);
         parser()
@@ -88,7 +89,7 @@ function parser(){
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore(key) {
+function incrementScore() {
     AntiCheat()
     goToBlock()
     Energy()
