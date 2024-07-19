@@ -17,13 +17,13 @@ if (localStorage.getItem('max-energy') === null) {
 }
 
 function Energy() {
-    if (energy > 0) {
         energy -= 1;
 
         localStorage.setItem('energy', energy);
 
         userEnergy.innerHTML = energy;
 
+<<<<<<< HEAD
         // console.log(">>>>" + energy)
         timer()
     } else {
@@ -34,20 +34,27 @@ function Energy() {
             $('#userMaxEnergy').css("color", "#fff");
         }, 1000)
     }
+=======
+        //console.log(">>>>" + energy)
+        timer() 
+>>>>>>> b086875367d6e5245797453ba762b8303024604a
 }
 
 let intervalId
 
 function timer(){
     if(energy <= 0){
+<<<<<<< HEAD
         // console.log(userEnergy.innerText)
         // console.log(maxEnergy)
+=======
+>>>>>>> b086875367d6e5245797453ba762b8303024604a
         setTimeout(() => {
             intervalId = setInterval(energyReset, 1000);
-        }, 700)
+        }, 7000)
     }
 }
-
+window.onload = timer() 
 let IsEnergyReseting = false
 
 function energyReset() {
