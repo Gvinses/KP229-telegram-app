@@ -89,33 +89,33 @@ function parser(){
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore() {
+function incrementScore(key) {
     AntiCheat()
     goToBlock()
     Energy()
          // console.log(supabase);
-    localStorage.setItem('energy', energy);
 
-        if (localStorage.getItem('haveReactor?') === 'true') {
+
+    if (localStorage.getItem('haveReactor?') === 'true') {
             reactor()
-        }
+    }
 
-        score = localStorage.getItem('score');
+    localStorage.getItem('score');
 
-        score += tapValue;
-        scoreElement.innerText = score;
-        localStorage.setItem('score', score); // Store score in local storage
+    score += tapValue;
+    scoreElement.innerText = score;
+    localStorage.setItem('score', score); // Store score in local storage
         
-        loadIt()
-        numbers()
+    loadIt()
+    numbers()
     
-        picToClick.css("transform", "scale(1)")
-        setTimeout(() => {
+    picToClick.css("transform", "scale(1)")
+    setTimeout(() => {
             picToClick.css("transform", "scale(0.9)")
-        })
-        setTimeout(() => {
+    })
+    setTimeout(() => {
             picToClick.css("transform", "scale(1)")
-        }, 200);
+    }, 200);
 
     BGsetter()
         if (IsEnergyReseting === true){
