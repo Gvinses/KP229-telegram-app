@@ -96,8 +96,9 @@ function parser(){
 function incrementScore() {
     AntiCheat()
     goToBlock()
-    Energy()
-    // console.log(supabase);
+    if (energy > 0) {
+        Energy() 
+         // console.log(supabase);
     localStorage.setItem('energy', energy);
 
         if (localStorage.getItem('haveReactor?') === 'true') {
@@ -122,11 +123,20 @@ function incrementScore() {
         }, 200);
 
     BGsetter()
-    if (IsEnergyReseting === true){
-        setTimeout(() => {
-            location.reload()
-            IsEnergyReseting = false
-        }, 50)
+        if (IsEnergyReseting === true){
+            setTimeout(() => {
+                location.reload()
+                IsEnergyReseting = false
+            }, 50)
+    } else if (energy <= 0) {     
+                $('#userEnergy').css("color", "red")
+                $('#userMaxEnergy').css("color", "red");
+            setTimeout(() => {
+                $('#userEnergy').css("color",   "#fff")
+                $      ('#userMaxEnergy').css("color", "#fff");
+            }, 1000)
+
+        }
     }
 }
 
