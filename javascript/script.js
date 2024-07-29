@@ -9,10 +9,10 @@ let tapEquals = document.getElementById('1TapEquals') // Retrieve score from loc
 let picToClick = $('#toClick')
 
 function localStorageChecker() {
-    if ((localStorage.getItem('score') === null) || (localStorage.getItem('score') === NaN)) {
+    if ((localStorage.getItem('score') === null) || (localStorage.getItem('score') === 'NaN')) {
         localStorage.setItem('score', 0);
     }
-    if (localStorage.getItem('tapValue') === null || (localStorage.getItem('tapValue') === NaN)) {
+    if (localStorage.getItem('tapValue') === null || (localStorage.getItem('tapValue') === 'NaN')) {
         localStorage.setItem('tapValue', 1);
     }
     if ((localStorage.getItem('energy') === null) || (localStorage.getItem('energy') === 'NaN')) {
@@ -20,7 +20,7 @@ function localStorageChecker() {
         energy = localStorage.getItem('energy')
         userEnergy.innerText = energy
     }
-    if ((localStorage.getItem('haveReactor?') === null) || (localStorage.getItem('haveReactor?') === NaN)) {
+    if ((localStorage.getItem('haveReactor?') === null) || (localStorage.getItem('haveReactor?') === 'NaN')) {
         localStorage.setItem('haveReactor?', false);
     }
 }
@@ -74,64 +74,63 @@ function tapValueCorrect() {
     }
 }
 // loadItemsFromCloud()
-function parser(){    
-    localStorage.getItem('score', score);
+function parser(){
+    localStorage.getItem('score');
     scoreElement.innerText = score;
 
-    localStorage.getItem('tapValue', tapValue);
+    tapValue = localStorage.getItem('tapValue');
     tapEquals.innerText = String(tapValue) + '/1'
 
     tapValue = parseInt(localStorage.getItem('tapValue'))
-
-    localStorage.setItem('tapValue', tapValue); 
+    localStorage.setItem('tapValue', tapValue);
     localStorage.setItem('score', score); // Store score in local storage
 
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
 
-function incrementScore(key) {
+function incrementScore() {
     AntiCheat()
     goToBlock()
-    Energy()
-         // console.log(supabase);
+    clearInterval(intervalId)
 
-
-    if (localStorage.getItem('haveReactor?') === 'true') {
+    if (energy > 0) {
+        Energy()
+        if (localStorage.getItem('haveReactor?') === 'true') {
             reactor()
-    }
+        }
 
-    localStorage.getItem('score');
+        localStorage.getItem('score');
 
-    score += tapValue;
-    scoreElement.innerText = score;
-    localStorage.setItem('score', score); // Store score in local storage
-        
-    loadIt()
-    numbers()
-    
-    picToClick.css("transform", "scale(1)")
-    setTimeout(() => {
+        score += tapValue;
+        scoreElement.innerText = score;
+        localStorage.setItem('score', score); // Store score in local storage
+
+        loadIt()
+        numbers()
+
+        picToClick.css("transform", "scale(1)")
+        setTimeout(() => {
             picToClick.css("transform", "scale(0.9)")
-    })
-    setTimeout(() => {
+        })
+        setTimeout(() => {
             picToClick.css("transform", "scale(1)")
-    }, 200);
+        }, 200);
 
-    BGsetter()
-        if (IsEnergyReseting === true){
+        BGsetter()
+        if (IsEnergyReseting === true) {
             setTimeout(() => {
                 location.reload()
                 IsEnergyReseting = false
             }, 50)
-    } if (energy <= 0) {
-                $('#userEnergy').css("color", "red")
-                $('#userMaxEnergy').css("color", "red");
-            setTimeout(() => {
-                $('#userEnergy').css("color",   "#fff")
-                $      ('#userMaxEnergy').css("color", "#fff");
-            }, 1000)
-
         }
+    } else {
+        $('#userEnergy').css("color", "red")
+        $('#userMaxEnergy').css("color", "red");
+        setTimeout(() => {
+            $('#userEnergy').css("color", "#fff")
+            $('#userMaxEnergy').css("color", "#fff");
+        }, 1000)
+    }
 }
 
 function numbers(){

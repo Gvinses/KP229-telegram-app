@@ -17,20 +17,10 @@ if (localStorage.getItem('max-energy') === null) {
 }
 
 function Energy() {
-    if (energy > 0) {
-        energy -= 1;
-        localStorage.setItem('energy', energy);
-        userEnergy.innerHTML = energy;
-        timer()
-    } else {
-        $('#userEnergy').css("color", "red")
-        $('#userMaxEnergy').css("color", "red");
-        setTimeout(() => {
-            $('#userEnergy').css("color", "#fff")
-            $('#userMaxEnergy').css("color", "#fff");
-        }, 1000)
+    energy -= 1;
+    localStorage.setItem('energy', energy);
+    userEnergy.innerHTML = energy;
     timer()
-    }
 }
 
 let intervalId

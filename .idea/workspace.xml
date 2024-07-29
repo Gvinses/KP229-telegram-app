@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/EnterAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/DB/EnterAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/ExportMoney.js" beforeDir="false" afterPath="$PROJECT_DIR$/DB/ExportMoney.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountRegInto.html" beforeDir="false" afterPath="$PROJECT_DIR$/accountRegInto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exportMoney.html" beforeDir="false" afterPath="$PROJECT_DIR$/exportMoney.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/energy.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/energy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/WEB/Frontend/musicListener&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/WEB/Frontend/electron Tutors&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -158,7 +154,9 @@
       <workItem from="1721504115048" duration="835000" />
       <workItem from="1721553439853" duration="81000" />
       <workItem from="1721554864990" duration="44000" />
-      <workItem from="1722016944337" duration="277000" />
+      <workItem from="1722016944337" duration="563000" />
+      <workItem from="1722110412713" duration="23000" />
+      <workItem from="1722241483620" duration="1531000" />
     </task>
     <servers />
   </component>
