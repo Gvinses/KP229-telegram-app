@@ -1,5 +1,5 @@
 window.onload = localStorageChecker()
-// window.onload = isUserRegistrate()
+window.onload = isUserRegistrate()
 
 let scoreElement = document.getElementById('Score');
 let tapValue = 1
@@ -25,26 +25,26 @@ function localStorageChecker() {
     }
 }
 
-// function isUserRegistrate() {
-//     if (localStorage.getItem('username') === null) {
-//         let helper = document.getElementById('helper')
-//         helper.style.position = 'relative'
-//         helper.innerText = '⬅️Нужно войти в аккаунт!!!!!'
-//         setTimeout(() => {
-//             helper.innerText = ''
-//             helper.style.position = 'absolute'
-//         }, 5000)
-//
-//         score = 0
-//         tapValue = 0
-//         energy = 1000
-//
-//         localStorage.setItem('score', score)
-//         localStorage.setItem('tapValue', tapValue)
-//         localStorage.setItem('energy', energy)
-//         localStorage.setItem('haveReactor?', false)
-//     }
-// }
+function isUserRegistrate() {
+    if (localStorage.getItem('username') === null) {
+        let helper = document.getElementById('helper')
+        helper.style.position = 'relative'
+        helper.innerText = '⬅️Нужно войти в аккаунт!!!!!'
+        setTimeout(() => {
+            helper.innerText = ''
+            helper.style.position = 'absolute'
+        }, 5000)
+
+        score = 0
+        tapValue = 0
+        energy = 1000
+
+        localStorage.setItem('score', score)
+        localStorage.setItem('tapValue', tapValue)
+        localStorage.setItem('energy', energy)
+        localStorage.setItem('haveReactor?', false)
+    }
+}
 
 window.onload = loadIt()
 window.onload = parser()

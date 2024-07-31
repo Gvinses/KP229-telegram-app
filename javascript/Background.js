@@ -85,7 +85,8 @@ function userColorChange() {
 }
 
 function blackBG() {
-    localStorage.setItem('backgroundColor', 'black');
+    localStorage.removeItem('backgroundColor');
+    localStorage.removeItem('backgroundImage');
     $('body').css('background-color', 'black');
 }
 
@@ -105,6 +106,12 @@ function setBackground() {
         let userBackgroundImage = localStorage.getItem('backgroundImage');
         $('body').css('background-image', `url(${userBackgroundImage})`);
         localStorage.removeItem('backgroundColor'); // Clear background color if image is selected
+    }
+
+    if (localStorage.getItem('backgroundImage') && localStorage.getItem('backgroundColor')) {
+        $('body').css('background-color', 'black');
+        localStorage.removeItem('backgroundColor'); // Clear background color if image is selected
+        localStorage.removeItem('backgroundImage'); // Clear background image if color is selected
     }
 }
 
