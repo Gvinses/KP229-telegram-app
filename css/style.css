@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    
     display: flex;
     justify-content: center;
     align-content: center;
@@ -15,6 +14,7 @@ body{
     font-family: "Calibri Light", sans-serif;
 
     margin: auto;
+    background-size: cover;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
