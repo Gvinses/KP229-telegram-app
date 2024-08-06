@@ -19,7 +19,9 @@ function enterAccount() {
         }
     }, 800)
     try {
-        fetch('https://kringeproduction.ru/api/users/?format=json')
+        fetch('https://kringeproduction.ru/api/users/?format=json', {
+            signal: AbortSignal.timeout(5000)
+        })
             .then((response) => {
                 return response.json();
             })
@@ -41,17 +43,14 @@ function enterAccount() {
                     }
                 }
                 if (isInDB === false) {
-                    document.getElementById('waiting').innerText = 'Ошибка'
-                    setTimeout(() => {
-                        document.getElementById('waiting').innerText = 'Ждёт...'
-                    }, 3000)
+                    throw new Error('Нет аккаунта')
                 }
             });
-    } catch (error) {
-        clearInterval(waitingInterval)
-        document.getElementById('waiting').innerText = `Ошибка ${error.message}`
-        setTimeout(() => {
-            document.getElementById('waiting').innerText = 'Ждёт...'
-        }, 3000)
-    }
+        } catch (e) {
+            clearInterval(waitingInterval)
+            document.getElementById('waiting').innerText = `Ошибка ${e.message}`
+            setTimeout(() => {
+                document.getElementById('waiting').innerText = 'Ждёт...'
+            }, 3000)
+        }
 }
