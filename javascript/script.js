@@ -1,5 +1,4 @@
 window.onload = localStorageChecker()
-window.onload = isUserRegistrate()
 
 let scoreElement = document.getElementById('Score');
 let tapValue = 1
@@ -22,27 +21,6 @@ function localStorageChecker() {
     }
     if ((localStorage.getItem('haveReactor?') === null) || (localStorage.getItem('haveReactor?') === 'NaN')) {
         localStorage.setItem('haveReactor?', false);
-    }
-}
-
-function isUserRegistrate() {
-    if (localStorage.getItem('username') === null) {
-        let helper = document.getElementById('helper')
-        helper.style.position = 'relative'
-        helper.innerText = '⬅️Нужно войти в аккаунт!!!!!'
-        setTimeout(() => {
-            helper.innerText = ''
-            helper.style.position = 'absolute'
-        }, 5000)
-
-        score = 0
-        tapValue = 0
-        energy = 1000
-
-        localStorage.setItem('score', score)
-        localStorage.setItem('tapValue', tapValue)
-        localStorage.setItem('energy', energy)
-        localStorage.setItem('haveReactor?', false)
     }
 }
 
@@ -91,6 +69,7 @@ function parser(){
 function incrementScore() {
     AntiCheat()
     goToBlock()
+    numbers()
     clearInterval(intervalId)
 
     if (energy > 0) {
@@ -106,7 +85,7 @@ function incrementScore() {
         localStorage.setItem('score', score); // Store score in local storage
 
         loadIt()
-        numbers()
+
 
         picToClick.css("transform", "scale(1)")
         setTimeout(() => {
@@ -157,7 +136,7 @@ function numbers(){
             "flex-direction": "column",
         })
         $(".scoreInHTML").css({
-            "font-size": "23px"
+            "font-size": "20px"
         })
     }
 }

@@ -7,9 +7,7 @@
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DB/EnterAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/DB/EnterAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/ExportMoney.js" beforeDir="false" afterPath="$PROJECT_DIR$/DB/ExportMoney.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/Background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/WEB/Frontend/electron Tutors&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/WEB/Frontend/proslushka&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -161,7 +159,13 @@
       <workItem from="1722110412713" duration="23000" />
       <workItem from="1722241483620" duration="1608000" />
       <workItem from="1722247027143" duration="198000" />
-      <workItem from="1722439804100" duration="508000" />
+      <workItem from="1722439804100" duration="915000" />
+      <workItem from="1722440767995" duration="1800000" />
+      <workItem from="1722448686198" duration="11000" />
+      <workItem from="1722502587227" duration="222000" />
+      <workItem from="1722509838842" duration="9000" />
+      <workItem from="1722517202191" duration="330000" />
+      <workItem from="1722941562096" duration="60000" />
     </task>
     <servers />
   </component>

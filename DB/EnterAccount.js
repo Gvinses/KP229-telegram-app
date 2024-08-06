@@ -30,7 +30,7 @@ function enterAccount() {
                 for (let obj of data) {
                     // console.log(obj['Telegram_hash'])
                     if (obj['Telegram_hash'] === username) {
-                        console.log(`${obj['Telegram_hash']} = Telegram_Hash ${obj['password']} = Password ${Number(obj['KPСS'])} His Score`)
+                        // console.log(`${obj['Telegram_hash']} = Telegram_Hash ${obj['password']} = Password ${Number(obj['KPСS'])} His Score`)
                         isInDB = true
                         if (obj['password'] === password) {
                             let codedUS = obj['Telegram_hash']
@@ -49,7 +49,7 @@ function enterAccount() {
             });
     } catch (error) {
         clearInterval(waitingInterval)
-        document.getElementById('waiting').innerText = 'Ошибка'
+        document.getElementById('waiting').innerText = `Ошибка ${error.message}`
         setTimeout(() => {
             document.getElementById('waiting').innerText = 'Ждёт...'
         }, 3000)
