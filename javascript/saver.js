@@ -62,15 +62,15 @@
 // }
 // WhatIsBrouser()
 
-(function() {
-    // Переопределяем методы localStorage
-    const noop = function() {};  // Пустая функция для игнорирования операций
+// (function() {
+//     // Переопределяем методы localStorage
+//     const noop = function() {};  // Пустая функция для игнорирования операций
 
-    localStorage.setItem = noop;
-    localStorage.getItem = function() {
-        return null; // Можно вернуть любое значение, например, null
-    };
-    localStorage.removeItem = noop;
-    localStorage.clear = noop;
+//     localStorage.setItem = noop;
+//     localStorage.getItem = function() {
+//         return null; // Можно вернуть любое значение, например, null
+//     };
+//     localStorage.removeItem = noop;
+//     localStorage.clear = noop;
 
-})();
+// })();
