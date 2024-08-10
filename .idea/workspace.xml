@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/javascript/saver.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/EnterAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/DB/EnterAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTTP Request" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,6 +59,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -163,7 +165,14 @@
       <workItem from="1722502587227" duration="222000" />
       <workItem from="1722509838842" duration="9000" />
       <workItem from="1722517202191" duration="330000" />
-      <workItem from="1722941562096" duration="662000" />
+      <workItem from="1722941562096" duration="740000" />
+      <workItem from="1722943194449" duration="1000" />
+      <workItem from="1723278065995" duration="676000" />
+      <workItem from="1723279023936" duration="65000" />
+      <workItem from="1723279284215" duration="98000" />
+      <workItem from="1723281030483" duration="12000" />
+      <workItem from="1723281048696" duration="14000" />
+      <workItem from="1723281069714" duration="3000" />
     </task>
     <servers />
   </component>

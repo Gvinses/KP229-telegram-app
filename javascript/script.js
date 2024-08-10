@@ -167,5 +167,3 @@ document.getElementById('Home').addEventListener('click', function() {
     localStorage.getItem('tapValue', tapValue);
     loadIt()
 });
-
-
