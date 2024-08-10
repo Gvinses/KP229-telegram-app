@@ -5,107 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/KP229-telegram-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KP229-telegram-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/saver.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/saver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/assert/strict.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/async_hooks.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/child_process.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/console.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/constants.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/crypto.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dgram.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/diagnostics_channel.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dns.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dns/promises.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dom-events.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/fs.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/fs/promises.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/globals.global.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/http.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/http2.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/https.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/module.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/net.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/os.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/path.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/perf_hooks.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/process.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/punycode.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/querystring.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/readline.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/readline/promises.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/repl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/sea.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream/consumers.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream/promises.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream/web.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/string_decoder.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/test.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/timers.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/timers/promises.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/trace_events.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tty.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/url.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/v8.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/vm.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/wasi.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/worker_threads.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/zlib.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/agent.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/api.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/balanced-pool.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/cache.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/client.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/connector.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/content-type.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/cookies.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/diagnostics-channel.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/dispatcher.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/errors.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/fetch.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/file.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/filereader.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/formdata.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/global-dispatcher.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/global-origin.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/handlers.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/header.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/interceptors.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/mock-agent.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/mock-client.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/mock-errors.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/mock-interceptor.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/mock-pool.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/patch.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/pool-stats.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/pool.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/proxy-agent.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/readable.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/webidl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/undici-types/websocket.d.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +180,7 @@
       <workItem from="1723281069714" duration="3000" />
       <workItem from="1723284815767" duration="269000" />
       <workItem from="1723285114288" duration="1741000" />
-      <workItem from="1723302769765" duration="1197000" />
+      <workItem from="1723302769765" duration="2477000" />
     </task>
     <servers />
   </component>
