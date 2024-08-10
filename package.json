@@ -1,0 +1,17 @@
+{
+  "name": "kp229-telegram-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gvinses/KP229-telegram-app.git"
+  },
+  "private": true,
+  "dependencies": {
+    "loudness": "^0.4.2"
+  }
+}

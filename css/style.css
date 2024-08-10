@@ -628,3 +628,7 @@ a{
         align-items: center;
     }
 }
+#background-video {
+    position: absolute;
+    width: 100%;
+}
