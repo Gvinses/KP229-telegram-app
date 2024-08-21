@@ -1,5 +1,3 @@
-window.onload = localStorageChecker()
-
 let scoreElement = document.getElementById('Score');
 let tapValue = 1
 let score = parseInt(localStorage.getItem('score') || 1) ; // Retrieve score from local storage
@@ -24,6 +22,7 @@ function localStorageChecker() {
     }
 }
 
+window.onload = localStorageChecker()
 window.onload = loadIt()
 window.onload = parser()
 window.onload = numbers()
@@ -65,14 +64,13 @@ function parser(){
 
     document.getElementById('userEnergy').innerText = parseInt(localStorage.getItem('energy'));
 }
-
 function incrementScore() {
     AntiCheat()
     goToBlock()
     numbers()
     clearInterval(intervalId)
 
-    if (energy > 0) {
+    if (Number(localStorage.getItem('energy')) > 0) {
         Energy()
         if (localStorage.getItem('haveReactor?') === 'true') {
             reactor()

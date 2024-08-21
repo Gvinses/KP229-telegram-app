@@ -13,12 +13,10 @@ body{
     color: white;
     font-family: "Calibri Light", sans-serif;
 
-    margin: auto;
-    background-size: cover;
+    background-size: contain;
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    /*-html-user-select: none;    !* Konqueror *!*/
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
@@ -28,9 +26,6 @@ button{
     border: none;
     background: none;
 }
-/* #toClick{
-    filter: invert(1);
-} */
 
 /*------------------------main----------------------*/
 
@@ -45,12 +40,14 @@ main{
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
 }
 .container{
     margin-top: 30px;
     height: 100%;
     display: flex;
     align-content: center;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
 }
@@ -67,10 +64,22 @@ main{
 /* img, svg{
     filter: invert(1);
 } */
-#toClick{
+.buttToClick {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.clickerPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toClick {
+    display: flex;
+
     width: calc(440px - 20%);
     height: calc(440px - 20%);
-
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .enegry{

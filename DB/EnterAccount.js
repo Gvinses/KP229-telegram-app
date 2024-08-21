@@ -5,7 +5,7 @@ function dontHaveAccount() {
 ////same but it is fetch and new
 let username
 let password
-function enterAccount() {
+async function enterAccount() {
     username = document.getElementById('userNameInput').value
     password = document.getElementById('userPasswordInput').value
     document.getElementById('waiting').innerText = 'Ждёт.'
@@ -19,38 +19,41 @@ function enterAccount() {
         }
     }, 800)
     try {
-        fetch('https://kringeproduction.ru/api/users/?format=json', {
-            signal: AbortSignal.timeout(5000)
-        })
+        setTimeout( function () {
+            throw new Error('Error')
+        }, 1000)
+        await fetch('https://kringeproduction.ru/api/users/?format=json')
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
-                clearInterval(waitingInterval)
-                // console.log(data);
-                let isInDB = false
+                clearInterval(waitingInterval);
+                let isInDB = false;
                 for (let obj of data) {
-                    // console.log(obj['Telegram_hash'])
                     if (obj['Telegram_hash'] === username) {
-                        // console.log(`${obj['Telegram_hash']} = Telegram_Hash ${obj['password']} = Password ${Number(obj['KPСS'])} His Score`)
-                        isInDB = true
+                        isInDB = true;
                         if (obj['password'] === password) {
-                            let codedUS = obj['Telegram_hash']
-                            localStorage.setItem('username', codedUS)
-                            window.location.href = "exportMoney.html"
+                            let codedUS = obj['Telegram_hash'];
+                            localStorage.setItem('username', codedUS);
+                            window.location.href = "exportMoney.html";
                         }
-                        break
+                        break;
                     }
                 }
                 if (isInDB === false) {
-                    throw new Error('Нет аккаунта')
+                    throw new Error('Нет аккаунта');
                 }
             });
-        } catch (e) {
-            clearInterval(waitingInterval)
-            document.getElementById('waiting').innerText = `Ошибка ${e.message}`
-            setTimeout(() => {
-                document.getElementById('waiting').innerText = 'Ждёт...'
-            }, 3000)
-        }
+    } catch (e) {
+        let waitingP = document.getElementById('waiting')
+        console.log(e.message + ' < ' + waitingP)
+        clearInterval(waitingInterval)
+        waitingP.innerText = e.message + ' попробуйте открыть сайт '
+        let a = document.createElement('a')
+        a.href = 'http://kringeproduction.ru/'
+        a.textContent = 'KP229'
+        a.target = "_blank"
+        waitingP.appendChild(a)
+    }
+
 }
