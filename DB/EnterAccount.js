@@ -20,8 +20,8 @@ async function enterAccount() {
     }, 800)
     try {
         setTimeout( function () {
-            throw new Error('Error')
-        }, 1000)
+            throw new Error('Run Time Error')
+        }, 10000)
         await fetch('https://kringeproduction.ru/api/users/?format=json')
             .then((response) => {
                 return response.json();
