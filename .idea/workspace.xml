@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07b1a451-efb8-4f71-ab69-2002c5bffa80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/EnterAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/DB/EnterAccount.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/saver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.16.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.15&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/WEB/NodeJS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Code/WEB/Frontend/JS/vibrationApi&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -188,7 +185,9 @@
       <workItem from="1723315287999" duration="22000" />
       <workItem from="1723470883054" duration="38000" />
       <workItem from="1723894667937" duration="1392000" />
-      <workItem from="1724226949224" duration="2989000" />
+      <workItem from="1724226949224" duration="3590000" />
+      <workItem from="1724271235864" duration="39000" />
+      <workItem from="1724333973708" duration="629000" />
     </task>
     <servers />
   </component>

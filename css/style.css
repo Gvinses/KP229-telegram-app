@@ -371,6 +371,7 @@ a{
 .IOBGup{
     display: inline-block;
 }
+/**/
 #popup-overlay, #popup-overlay2, #popup-overlay3 {
     position: fixed;
     top: 0;
@@ -439,7 +440,7 @@ a{
 
 /*//////////////// settings ///////////////*/
 
-.account, .order{
+.account, .order, .thanks{
     padding: 10px;
     margin: 10px;
     border: 1px solid white;
@@ -480,7 +481,11 @@ a{
     display: flex;
     flex-direction: column;
 }
-
+.thanks > a {
+    list-style: none;
+    padding: 15px 65px;
+    cursor: pointer;
+}
 /*//Export money//*/
 
 .exportMain{
